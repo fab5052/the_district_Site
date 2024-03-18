@@ -1,0 +1,46 @@
+{
+  "items": [
+
+    {
+      "carousel-id": "0",
+      "titre": "Sandwich",
+      "image": "assets/img/images_the_district/category/sandwich_cat.jpg",
+      "description": "Du bon filet de poulet mariné dans notre spécialité sucrée ",
+      "active": "Yes"
+      
+    },
+    {
+      "carousel-id": "1",
+      "titre": "Asiatique",
+      "image": "assets/img/images_the_district/category/asian_food_cat.jpg",
+      "description": "Du bon filet de poulet mariné dans notre spécialité sucrée ",
+      "active": "Yes"
+      
+    },
+    {
+      "carousel-id": "2",
+      "titre": "Pasta",
+      "image": "assets/img/images_the_district/category/pasta_cat.jpg",
+      "description": "Du bon filet de poulet mariné dans notre spécialité sucrée ",
+      "active": "Yes"
+      
+    },
+    {
+      "carousel-id": "3",
+      "titre": "Salade",
+      "image": "assets/img/images_the_district/category/salade_cat.jpg",
+      "description": "Du bon filet de poulet mariné dans notre spécialité sucrée ",
+      "active": "Yes"
+      
+    },
+    {
+      "carousel-id": "4",
+      "titre": "Veggie",
+      "image": "assets/img/images_the_district/category/veggie_cat.jpg",
+      "description": "Du bon filet de poulet mariné dans notre spécialité sucrée ",
+      "active": "Yes"
+      
+    }
+    
+  ]
+  }

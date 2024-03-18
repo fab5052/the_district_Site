@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="tartecitron.css">
+    <link rel="stylesheet" href="emoticone.css">
+    <link rel="stylesheet" href="connexion.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <script src="/libraries/tarteaucitron/tarteaucitron.js?v=0"></script>
+    <script id="" async=""
+        src="https://www.ameli.fr/libraries/tarteaucitron/lang/tarteaucitron.en.js?v=20210509"></script>
+    <script id="" async=""
+        src="https://www.ameli.fr/libraries/tarteaucitron/tarteaucitron.services.js?v=20210509"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="background" id="background_image">
+
+		
+			
+		
+		
+		
+			
+			
+		
+					
+		
+		<div class="entete">
+			<h1>Ici, vous accédez à votre <b>compte ameli</b></h1>
+			<p>Vous suivez vos remboursements, téléchargez vos attestations, effectuez vos démarches en ligne...</p>
+		</div>
+		<div class="contenu"> 
+			<div class="colonne_gauche">
+				<p>
+					Vous avez déjà un compte ameli
+					<br>
+					<span class="code_connexion">(ou un code donné par votre Caisse)</span>
+				</p>
+				<a class="r_btlien connexion" href="#" id="id_r_cnx_btn_code">
+					Connectez-vous
+				</a>
+			</div>
+			<div class="colonne_centre"></div>
+			<div class="colonne_droite">
+				<p>Vous n'avez pas de compte ameli</p>
+				<a class="r_btlien creation_compte" href="#" id="id_r_cnx_btn_code">
+					Créez votre compte
+				</a>
+			</div>
+			
+		</div>
+		
+		
+	</div>
+
+    <div id="portal_book_2" class="wlp-bighorn-book">
+        <div class="wlp-bighorn-book-content">
+            <div id="as_connexion_book" class="wlp-bighorn-book">
+                <div class="wlp-bighorn-book-content">
+                    <main id="as_login_page" class="wlp-bighorn-page-unconnect" role="main">
+                        <section id="contenu" class="corps-de-page">
+                            <script src="JavaScriptServlet.js"></script>
+                            <div class="wlp-bighorn-layout wlp-bighorn-layout-grid">
+                                <div class="wlp-bighorn-layout-cell wlp-bighorn-layout-grid-cell">
+                                    <div class="wlp-bighorn-layout wlp-bighorn-layout-flow">
+                                        <div class="wlp-bighorn-layout-cell wlp-bighorn-layout-flow-vertical wlp-bighorn-layout-flow-first"
+                                            style="height: auto">
+                                            <div id="connexioncompte_2" class="wlp-bighorn-window  ">
+                                                <div class="wlp-bighorn-window-content">
+
+
+
+
+
+
+
+
+
+
+                                                    <link href="../../framework/skins/assure/css/connexion.css"
+                                                        rel="stylesheet" type="text/css">
+                                                    <link rel="stylesheet"
+                                                        href="../../framework/skins/assure/css/smart-app-banner.css"
+                                                        type="text/css" media="screen">
+
+                                                    <!-- Smart Banner Plugin -->
+                                                    <script src="../../js/fr/cnamts/as/smart-app-banner.js"></script>
+                                                    <script
+                                                        src="../../js/fr/cnamts/as/smart-app-banner-surcharge.js"></script>
+                                                    <script src="../../js/fr/cnamts/as/ua-parser.js"></script>
+
+                                                    <script type="text/javascript">
+                                                        $$('head')[0].appendHTML('<meta name="viewport" content="initial-scale=1.0"><meta name="google-play-app" content="app-id=fr.cnamts.it.activity"><meta name="apple-itunes-app" content="app-id=620447173"/>');
+                                                    </script>
+
+                                                    <script>
+
+                                                        // Initialize Banner
+                                                        new SmartBanner({
+                                                            daysHidden: 1, // days to hide banner after close button is clicked (defaults to 15)
+                                                            daysReminder: 1,// days to hide banner after "VIEW" button is clicked (defaults to 90)
+                                                            appStoreLanguage: 'fr', // language code for the App Store (defaults to user's browser language)
+                                                            title: "ameli, l'Assurance Maladie",
+                                                            author: '',
+                                                            button: "Télécharger",
+                                                            store: {
+                                                                ios: ' ',
+                                                                android: ' '
+                                                            },
+                                                            price: {
+                                                                ios: '',
+                                                                android: ''
+                                                            },
+                                                            icon: "/PortailAS/framework/skins/assure/images/refonte/header/Icon-60@3x.png",
+                                                            //theme: '', // put platform type ('ios', 'android', etc.) here to force single theme on all device
+                                                            //force: 'ios' // Uncomment for platform emulation
+                                                        });
+
+                                                    </script>
+
+
+
+
+                                                    <div class="background" id="background_image">
+
+
+
+
+
+
+
+
+
+
+
+                                                        <div class="entete">
+                                                            <h1>Ici, vous accédez à votre <b>compte ameli</b></h1>
+                                                            <p>Vous suivez vos remboursements, téléchargez vos
+                                                                attestations, effectuez vos démarches en ligne...</p>
+                                                        </div>
+                                                        <div class="contenu">
+                                                            <div class="colonne_gauche">
+                                                                <p>
+                                                                    Vous avez déjà un compte ameli
+                                                                    <br>
+                                                                    <span class="code_connexion">(ou un code donné par
+                                                                        votre Caisse)</span>
+                                                                </p>
+                                                                <a class="r_btlien connexion"
+                                                                    href="https://assure.ameli.fr:443/PortailAS/appmanager/PortailAS/assure?_nfpb=true&amp;_pageLabel=as_login_page&amp;connexioncompte_2actionEvt=afficher"
+                                                                    id="id_r_cnx_btn_code">
+                                                                    Connectez-vous
+                                                                </a>
+                                                            </div>
+                                                            <div class="colonne_centre"></div>
+                                                            <div class="colonne_droite">
+                                                                <p>Vous n'avez pas de compte ameli</p>
+                                                                <a class="r_btlien creation_compte"
+                                                                    href="https://assure.ameli.fr:443/PortailAS/appmanager/PortailAS/assure?_nfpb=true&amp;_pageLabel=as_creation_immediate_page"
+                                                                    id="id_r_cnx_btn_code">
+                                                                    Créez votre compte
+                                                                </a>
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+
+
+                                                    <div class="services">
+
+                                                        <div class="info-accueil">
+
+                                                            <h2>Les services du <b>compte ameli</b></h2>
+
+                                                            <div class="icones">
+                                                                <div class="bloc-image">
+                                                                    <img alt=""
+                                                                        src="/PortailAS/framework/skins/assure/images/refonte/connexion/accueil/picto_attestation_de_droits.svg">
+                                                                    <div class="texte-image">Attestations de droits
+                                                                    </div>
+                                                                </div>
+                                                                <div class="bloc-image">
+                                                                    <img alt=""
+                                                                        src="/PortailAS/framework/skins/assure/images/refonte/connexion/accueil/picto_paiements.svg">
+                                                                    <div class="texte-image">Paiements et remboursements
+                                                                    </div>
+                                                                </div>
+                                                                <div class="bloc-image">
+                                                                    <img alt=""
+                                                                        src="/PortailAS/framework/skins/assure/images/refonte/connexion/accueil/picto_carte_vitale.svg">
+                                                                    <div class="texte-image">Carte Vitale</div>
+                                                                </div>
+                                                                <div class="bloc-image">
+                                                                    <img alt=""
+                                                                        src="/PortailAS/framework/skins/assure/images/refonte/connexion/accueil/picto_ceam.svg">
+                                                                    <div class="texte-image">Carte Européenne
+                                                                        d'Assurance Maladie</div>
+                                                                </div>
+                                                                <div class="bloc-image">
+                                                                    <img alt=""
+                                                                        src="/PortailAS/framework/skins/assure/images/refonte/connexion/accueil/picto_changement_de_situation.svg">
+                                                                    <div class="texte-image">Changement de situation
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="accessibilite">
+                                                                <div class="icones">
+                                                                    <div class="bloc-image-france-relance">
+                                                                        <img alt="France Relance"
+                                                                            src="/PortailAS/framework/skins/assure/images/refonte/connexion/accueil/picto_accessibilite_Logo_France_Relance.svg">
+                                                                    </div>
+                                                                    <div class="bloc-image">
+                                                                        <img alt="Financé par l'Union Européenne, NextGenerationEU"
+                                                                            src="/PortailAS/framework/skins/assure/images/refonte/connexion/accueil/picto_accessibilite_Logo_NEXT_GEN_EUR.svg">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Bandeau de recueil du consentement pour le webanalyse : affiché si le recueil de consentement n'est pas encore effectué -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    <!-- Popup suppression -->
+                                                    <div class="ncp-popup ncp-popup-overlay ncp-popup-trans-outline"
+                                                        id="idPopupWARecueilConsentement" role="dialog"
+                                                        aria-modal="true">
+                                                        <div class="popupWARecueilConsentement">
+
+                                                            <!--lien permettant de garder le focus à intérieur de la modale-->
+                                                            <a id="premierElementPopupWA" tabindex="0"
+                                                                aria-hidden="true"
+                                                                onfocus="$('idWALienInfoRecueilConsentement').focus();"></a>
+
+                                                            <!--Contenu de la modale-->
+                                                            <div class="container">
+                                                                <div class="contenu">
+                                                                    <p>
+                                                                        L’Assurance Maladie utilise des cookies pour
+                                                                        vous permettre une navigation optimale, garantir
+                                                                        l’accès sécurisé à vos données, détecter
+                                                                        d’éventuels dysfonctionnements ou encore
+                                                                        effectuer des mesures d’audience et de
+                                                                        performance, analyser votre parcours et
+                                                                        améliorer la qualité des services proposés.
+                                                                    </p>
+
+                                                                    <a id="idWALienInfoRecueilConsentement"
+                                                                        target="_blank"
+                                                                        href="https://www.ameli.fr/assure/mentions-legales-cgu#text_199670">
+                                                                        En savoir plus sur la gestion des cookies
+                                                                    </a>
+
+                                                                    <div class="txt_milieu boutons">
+                                                                        <input type="button" id="idWAaccepter"
+                                                                            class="boutonBlancNouveau"
+                                                                            value="Tout accepter"
+                                                                            onclick="accepterConsentement(nomCookieConsentement, domaineCookieConsentement, scriptSrc);">
+
+                                                                        <input type="button" id="idWArefuser"
+                                                                            class="boutonBleuNouveau"
+                                                                            value="Tout refuser"
+                                                                            onclick="refuserConsentement(nomCookieConsentement, domaineCookieConsentement);">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!--lien permettant de garder le focus à intérieur de la modale-->
+                                                            <a id="dernierElementPopupWA" tabindex="0"
+                                                                aria-hidden="true"
+                                                                onfocus="$('idWALienInfoRecueilConsentement').focus();"></a>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <script>
+                                                        var webanalyseEnabled = "true";
+                                                        var nomCookieConsentement = "analyse_consent";
+                                                        var domaineCookieConsentement = "ameli.fr";
+                                                        // afficher le bandeau de recueil du consentement si la fonctionnalité est activée 
+                                                        // et que le recueil du consentement n'est pas encore effectué
+                                                        if (doitAfficherBandeauConsentement(webanalyseEnabled, nomCookieConsentement) === CONSTANTE_TRUE) {
+                                                            // afficher le bandeau de recueil consentement
+                                                            window.onload = function () {
+                                                                window.location.href = '#idPopupWARecueilConsentement';
+                                                            };
+                                                        }
+
+                                                    </script>
+
+                                                    <script>
+                                                        window.onbeforeunload = function () {
+                                                            window.scrollTo(0, 0);
+                                                        };
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div tabindex="-1" id="tarteaucitronAlertBig" class="tarteaucitronAlertBigBottom"
+        style="display: block; opacity: 1;"> <span id="tarteaucitronDisclaimerAlert"> Ce site utilise des cookies qui
+            nous permettent de vous proposer une navigation optimale, de mesurer l'audience du site et de nos campagnes
+            de communication, ainsi que de vous proposer des vidéos. </span> <button type="button"
+            class="tarteaucitronCTAButton tarteaucitronAllow" id="tarteaucitronPersonalize2"
+            data-xiti-name="Tout accepter" data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2=""
+            data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation" data-once="ameli_xiti"> <span
+                class="tarteaucitronCheck"></span> Tout accepter </button> <button type="button"
+            class="tarteaucitronCTAButton tarteaucitronDeny" id="tarteaucitronAllDenied2" data-xiti-name="Tout refuser"
+            data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="" data-xiti-chapter-3="" data-xiti-level-2=""
+            data-xiti-type="navigation" data-once="ameli_xiti"> <span class="tarteaucitronCross"></span> Tout refuser
+        </button> <button type="button" id="tarteaucitronCloseAlert" aria-label="Personnaliser (modal window)"
+            title="Personnaliser (modal window)" data-xiti-name="Personnaliser" data-xiti-chapter-1="Tarte au citron"
+            data-xiti-chapter-2="" data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation"
+            data-once="ameli_xiti"> Personnaliser </button>
+        <p id="buttonTarteaucitronPrivacyUrl"> <a href="/assure/protection-donnees-personnelles#text_20985"
+                id="tarteaucitronPrivacyUrl"
+                data-xiti-name="En savoir plus sur la politique de protection des données personnelles"
+                data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="" data-xiti-chapter-3="" data-xiti-level-2=""
+                data-xiti-type="navigation" data-once="ameli_xiti"> En savoir plus sur la politique de protection des
+                données personnelles </a> </p>
+    </div>
+
+    <div id="tarteaucitronRoot" class="tarteaucitronBeforeVisible">
+        <div id="tarteaucitronPremium"></div><button type="button" id="tarteaucitronBack" aria-label="Fermer"
+            title="Fermer"></button>
+        <div id="tarteaucitron" role="dialog" aria-modal="true" aria-describedby="tarteaucitronInfo"
+            aria-labelledby="dialogTitle" tabindex="-1">
+            <div id="tarteaucitronHead"> <button type="button" id="tarteaucitronClosePanel" data-xiti-name="Fermer"
+                    data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="" data-xiti-chapter-3=""
+                    data-xiti-level-2="" data-xiti-type="navigation" data-once="ameli_xiti"> <i class="icon-close"></i>
+                    <span class="sr-only">Fermer la fenêtre</span> </button> </div>
+            <div id="tarteaucitronServices">
+                <div class="tarteaucitronLine tarteaucitronMainLine" id="tarteaucitronMainLineOffset">
+                    <div class="tarteaucitronH1" role="heading" aria-level="1" id="dialogTitle">Gestion de vos cookies
+                    </div>
+                    <div id="tarteaucitronInfo"> L'Assurance Maladie s'engage, dans le cadre des missions qui lui sont
+                        confiées, à assurer la protection, la confidentialité et la sécurité de l'ensemble de vos
+                        données personnelles dans le respect de votre vie privée. Lorsque vous naviguez sur notre site,
+                        nous pouvons être amenés à déposer différents types de cookies sur votre terminal. Ils ont des
+                        finalités différentes décrites ci-dessous. Cette page vous permet de les accepter ou de les
+                        refuser de manière globale ou au cas par cas. <br> </div>
+                    <div class="tarteaucitronAsk" id="tarteaucitronScrollbarAdjust"> <button type="button"
+                            id="tarteaucitronAllAllowed" class="tarteaucitronAllow" data-xiti-name="Tout accepter"
+                            data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="" data-xiti-chapter-3=""
+                            data-xiti-level-2="" data-xiti-type="navigation" aria-pressed="false"
+                            data-once="ameli_xiti"> <span class="tarteaucitronCheck"></span> Tout accepter </button>
+                        <button type="button" id="tarteaucitronAllDenied" class="tarteaucitronDeny"
+                            data-xiti-name="Tout refuser" data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2=""
+                            data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation" aria-pressed="false"
+                            data-once="ameli_xiti"> <span class="tarteaucitronCross"></span> Tout refuser </button>
+                    </div>
+                </div>
+                <div class="tarteaucitronBorder">
+                    <div class="clear"></div>
+                    <ul>
+                        <li id="tarteaucitronServicesTitle_needed">
+                            <div class="tarteaucitronTitle">
+                                <h2>Nécessaires au bon fonctionnement du site</h2>
+                            </div>
+                            <div id="tarteaucitronDetailsneeded" class="tarteaucitronDetails tarteaucitronInfoBox"> Ces
+                                cookies permettent de garantir des fonctionnalités importantes du site comme la
+                                sélection de votre caisse à travers la saisie de votre code postal, la mémorisation de
+                                l'espace visité ou encore la sécurité du site. Le site web ne pouvant fonctionner
+                                correctement sans eux, ils ne peuvent être désactivés. </div>
+                            <ul id="tarteaucitronServices_needed" class="hidden"></ul>
+                        </li>
+                        <li id="tarteaucitronServicesTitle_ads" class="tarteaucitronHidden">
+                            <div class="tarteaucitronTitle">
+                                <h2>Régies publicitaires</h2>
+                            </div>
+                            <div id="tarteaucitronDetailsads" class="tarteaucitronDetails tarteaucitronInfoBox"> Les
+                                régies publicitaires permettent de générer des revenus en commercialisant les espaces
+                                publicitaires du site. </div>
+                            <ul id="tarteaucitronServices_ads"></ul>
+                        </li>
+                        <li id="tarteaucitronServicesTitle_api" class="tarteaucitronHidden">
+                            <div class="tarteaucitronTitle">
+                                <h2>APIs</h2>
+                            </div>
+                            <div id="tarteaucitronDetailsapi" class="tarteaucitronDetails tarteaucitronInfoBox"> Les
+                                APIs permettent de charger des scripts : géolocalisation, moteurs de recherche,
+                                traductions, ... </div>
+                            <ul id="tarteaucitronServices_api"></ul>
+                        </li>
+                        <li id="tarteaucitronServicesTitle_campaigns" class="tarteaucitronHidden"
+                            style="display: block;">
+                            <div class="tarteaucitronTitle">
+                                <h2>Campagnes</h2>
+                            </div>
+                            <div id="tarteaucitronDetailscampaigns" class="tarteaucitronDetails tarteaucitronInfoBox">
+                                Ces cookies sont utilisés pour établir des statistiques anonymes de nos campagnes de
+                                communication, via campaign manager et Adform, et pour évaluer leur diffusion et leur
+                                efficacité. </div>
+                            <ul id="tarteaucitronServices_campaigns">
+                                <li id="drupal_googletagmanagerLine" class="tarteaucitronLine">
+                                    <div class="tarteaucitronName"> </div>
+                                    <div class="tarteaucitronAsk"> <button type="button"
+                                            aria-label="Accepter Google Tag Manager" id="drupal_googletagmanagerAllowed"
+                                            class="tarteaucitronAllow" data-xiti-name="Google Tag Manager"
+                                            data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="Accepter"
+                                            data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation"
+                                            aria-pressed="false" data-once="ameli_xiti"> <span
+                                                class="tarteaucitronCheck"></span> Accepter </button> <button
+                                            type="button" aria-label="Refuser Google Tag Manager"
+                                            id="drupal_googletagmanagerDenied" class="tarteaucitronDeny"
+                                            data-xiti-name="Google Tag Manager" data-xiti-chapter-1="Tarte au citron"
+                                            data-xiti-chapter-2="Refuser" data-xiti-chapter-3="" data-xiti-level-2=""
+                                            data-xiti-type="navigation" aria-pressed="false" data-once="ameli_xiti">
+                                            <span class="tarteaucitronCross"></span> Refuser </button> </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="tarteaucitronServicesTitle_analytic" class="tarteaucitronHidden"
+                            style="display: block;">
+                            <div class="tarteaucitronTitle">
+                                <h2>Mesure d'audience</h2>
+                            </div>
+                            <div id="tarteaucitronDetailsanalytic" class="tarteaucitronDetails tarteaucitronInfoBox">
+                                Ces cookies permettent de générer des statistiques anonymes de fréquentation du site via
+                                Piano Analytics (le nombre de visites, les pages les plus vues, etc.) Ces données
+                                contribuent à identifier d’éventuels dysfonctionnements sur le site et à améliorer la
+                                qualité de nos services. </div>
+                            <ul id="tarteaucitronServices_analytic">
+                                <li id="drupal_pianoLine" class="tarteaucitronLine">
+                                    <div class="tarteaucitronName"> </div>
+                                    <div class="tarteaucitronAsk"> <button type="button"
+                                            aria-label="Accepter Piano (privacy by design)" id="drupal_pianoAllowed"
+                                            class="tarteaucitronAllow" data-xiti-name="Piano (privacy by design)"
+                                            data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="Accepter"
+                                            data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation"
+                                            aria-pressed="false" data-once="ameli_xiti"> <span
+                                                class="tarteaucitronCheck"></span> Accepter </button> <button
+                                            type="button" aria-label="Refuser Piano (privacy by design)"
+                                            id="drupal_pianoDenied" class="tarteaucitronDeny"
+                                            data-xiti-name="Piano (privacy by design)"
+                                            data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="Refuser"
+                                            data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation"
+                                            aria-pressed="false" data-once="ameli_xiti"> <span
+                                                class="tarteaucitronCross"></span> Refuser </button> </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="tarteaucitronServicesTitle_comment" class="tarteaucitronHidden">
+                            <div class="tarteaucitronTitle">
+                                <h2>Comments</h2>
+                            </div>
+                            <div id="tarteaucitronDetailscomment" class="tarteaucitronDetails tarteaucitronInfoBox"> Les
+                                gestionnaires de commentaires facilitent le dépôt de vos commentaires et luttent contre
+                                le spam. </div>
+                            <ul id="tarteaucitronServices_comment"></ul>
+                        </li>
+                        <li id="tarteaucitronServicesTitle_video" class="tarteaucitronHidden" style="display: block;">
+                            <div class="tarteaucitronTitle">
+                                <h2>Vidéos</h2>
+                            </div>
+                            <div id="tarteaucitronDetailsvideo" class="tarteaucitronDetails tarteaucitronInfoBox"> Ces
+                                cookies déposés via le service de lecture vidéos Vimeo vous permettent de visionner les
+                                contenus multimédia.
+                                A cette occasion, un transfert de données vers les États-Unis est opéré qui se fonde sur
+                                les clauses contractuelles types le cas échéant (article 46, paragraphe 2 du Règlement
+                                général sur la protection des données) approuvées par la Commission Européenne, qui ont
+                                pour objectif de garantir un niveau adéquat de protection des données personnelles.
+                            </div>
+                            <ul id="tarteaucitronServices_video">
+                                <li id="vimeoLine" class="tarteaucitronLine">
+                                    <div class="tarteaucitronName"> </div>
+                                    <div class="tarteaucitronAsk"> <button type="button" aria-label="Accepter Vimeo"
+                                            id="vimeoAllowed" class="tarteaucitronAllow" data-xiti-name="Vimeo"
+                                            data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="Accepter"
+                                            data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation"
+                                            aria-pressed="false" data-once="ameli_xiti"> <span
+                                                class="tarteaucitronCheck"></span> Accepter </button> <button
+                                            type="button" aria-label="Refuser Vimeo" id="vimeoDenied"
+                                            class="tarteaucitronDeny" data-xiti-name="Vimeo"
+                                            data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="Refuser"
+                                            data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation"
+                                            aria-pressed="false" data-once="ameli_xiti"> <span
+                                                class="tarteaucitronCross"></span> Refuser </button> </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="tarteaucitronServicesTitle_social" class="tarteaucitronHidden" style="display: block;">
+                            <div class="tarteaucitronTitle">
+                                <h2>Réseaux sociaux</h2>
+                            </div>
+                            <div id="tarteaucitronDetailssocial" class="tarteaucitronDetails tarteaucitronInfoBox"> Ces
+                                cookies déposés via les boutons réseaux sociaux permettent de faciliter le partage des
+                                contenus du site sur Facebook, X (anciennement Twitter) ou LinkedIn. </div>
+                            <ul id="tarteaucitronServices_social">
+                                <li id="drupal_addtoanyLine" class="tarteaucitronLine">
+                                    <div class="tarteaucitronName"> <a
+                                            href="https://fr-fr.facebook.com/privacy/explanation" target="_blank"
+                                            title="Lien vers la politique de confidentialité de Facebook"
+                                            data-xiti-name="Lien vers la politique de confidentialité de Facebook"
+                                            data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="AddToAny"
+                                            data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation"
+                                            data-once="ameli_xiti"> Lien vers la politique de confidentialité de
+                                            Facebook&nbsp;&gt; </a><br> <a href="https://twitter.com/fr/privacy"
+                                            target="_blank"
+                                            title="Lien vers la politique de confidentialité de X (anciennement Twitter)"
+                                            data-xiti-name="Lien vers la politique de confidentialité de X (anciennement Twitter)"
+                                            data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="AddToAny"
+                                            data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation"
+                                            data-once="ameli_xiti"> Lien vers la politique de confidentialité de X
+                                            (anciennement Twitter)&nbsp;&gt; </a><br> <a
+                                            href="https://fr.linkedin.com/legal/privacy-policy" target="_blank"
+                                            title="Lien vers la politique de confidentialité de LinkedIn"
+                                            data-xiti-name="Lien vers la politique de confidentialité de LinkedIn"
+                                            data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="AddToAny"
+                                            data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation"
+                                            data-once="ameli_xiti"> Lien vers la politique de confidentialité de
+                                            LinkedIn&nbsp;&gt; </a><br> </div>
+                                    <div class="tarteaucitronAsk"> <button type="button" aria-label="Accepter AddToAny"
+                                            id="drupal_addtoanyAllowed" class="tarteaucitronAllow"
+                                            data-xiti-name="AddToAny" data-xiti-chapter-1="Tarte au citron"
+                                            data-xiti-chapter-2="Accepter" data-xiti-chapter-3="" data-xiti-level-2=""
+                                            data-xiti-type="navigation" aria-pressed="false" data-once="ameli_xiti">
+                                            <span class="tarteaucitronCheck"></span> Accepter </button> <button
+                                            type="button" aria-label="Refuser AddToAny" id="drupal_addtoanyDenied"
+                                            class="tarteaucitronDeny" data-xiti-name="AddToAny"
+                                            data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="Refuser"
+                                            data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation"
+                                            aria-pressed="false" data-once="ameli_xiti"> <span
+                                                class="tarteaucitronCross"></span> Refuser </button> </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="tarteaucitronServicesTitle_support" class="tarteaucitronHidden">
+                            <div class="tarteaucitronTitle">
+                                <h2>Support</h2>
+                            </div>
+                            <div id="tarteaucitronDetailssupport" class="tarteaucitronDetails tarteaucitronInfoBox"> Les
+                                services de support vous permettent d'entrer en contact avec l'équipe du site et d'aider
+                                à son amélioration. </div>
+                            <ul id="tarteaucitronServices_support"></ul>
+                        </li>
+                        <li id="tarteaucitronServicesTitle_other" class="tarteaucitronHidden">
+                            <div class="tarteaucitronTitle">
+                                <h2>Autre</h2>
+                            </div>
+                            <div id="tarteaucitronDetailsother" class="tarteaucitronDetails tarteaucitronInfoBox">
+                                Services visant à afficher du contenu web. </div>
+                            <ul id="tarteaucitronServices_other"></ul>
+                        </li>
+                        <li id="tarteaucitronNoServicesTitle" class="tarteaucitronLine" style="display: none;">Ce site
+                            n'utilise aucun cookie nécessitant votre consentement.</li>
+                    </ul>
+                    <div id="tarteaucitronFooter"> <button type="button" id="tarteaucitronClosePanelSecondary"
+                            data-xiti-name="Fermer" data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2=""
+                            data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation"
+                            data-once="ameli_xiti"> Fermer </button> </div>
+                    <div class="tarteaucitronHidden tarteaucitron-spacer-20" id="tarteaucitronScrollbarChild"></div>
+                </div>
+            </div>
+        </div>
+        <div tabindex="-1" id="tarteaucitronAlertBig" class="tarteaucitronAlertBigBottom"
+            style="display: block; opacity: 1;"> <span id="tarteaucitronDisclaimerAlert"> Ce site utilise des cookies
+                qui nous permettent de vous proposer une navigation optimale, de mesurer l'audience du site et de nos
+                campagnes de communication, ainsi que de vous proposer des vidéos. </span> <button type="button"
+                class="tarteaucitronCTAButton tarteaucitronAllow" id="tarteaucitronPersonalize2"
+                data-xiti-name="Tout accepter" data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2=""
+                data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation" data-once="ameli_xiti"> <span
+                    class="tarteaucitronCheck"></span> Tout accepter </button> <button type="button"
+                class="tarteaucitronCTAButton tarteaucitronDeny" id="tarteaucitronAllDenied2"
+                data-xiti-name="Tout refuser" data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2=""
+                data-xiti-chapter-3="" data-xiti-level-2="" data-xiti-type="navigation" data-once="ameli_xiti"> <span
+                    class="tarteaucitronCross"></span> Tout refuser </button> <button type="button"
+                id="tarteaucitronCloseAlert" aria-label="Personnaliser (modal window)"
+                title="Personnaliser (modal window)" data-xiti-name="Personnaliser"
+                data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="" data-xiti-chapter-3="" data-xiti-level-2=""
+                data-xiti-type="navigation" data-once="ameli_xiti"> Personnaliser </button>
+            <p id="buttonTarteaucitronPrivacyUrl"> <a href="/assure/protection-donnees-personnelles#text_20985"
+                    id="tarteaucitronPrivacyUrl"
+                    data-xiti-name="En savoir plus sur la politique de protection des données personnelles"
+                    data-xiti-chapter-1="Tarte au citron" data-xiti-chapter-2="" data-xiti-chapter-3=""
+                    data-xiti-level-2="" data-xiti-type="navigation" data-once="ameli_xiti"> En savoir plus sur la
+                    politique de protection des données personnelles </a> </p>
+        </div>
+        <div id="tarteaucitronPercentage" style="display: block;"></div>
+    </div>
+
+
+    <script src="JavaScriptServlet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script>
+    <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+
+
+</body>
+
+</html>
