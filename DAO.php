@@ -1,5 +1,4 @@
 <?php
-
 // Inclusion du fichier de connexion à la base de données
 require_once('conn_database.php');
 

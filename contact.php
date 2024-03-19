@@ -163,11 +163,11 @@ require_once('view_plat_page.php');
             </div>
 
 
- 
+</div>
 
-          </form>
+     </form>
       
-        </fieldset>
+ </fieldset>
 
 
  <!--<div class="a-box a-spacing-extra-large">
