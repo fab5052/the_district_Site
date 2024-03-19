@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "lukaserat.npm-scripts"
+        "lukaserat.npm-scripts",
+        "oracle.mysql-shell-for-vs-code"
     ]
 }
