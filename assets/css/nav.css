@@ -18,7 +18,7 @@ z-index: 1000;
   /* CSS pour le footer */
   footer {
  
-    bottom: 0;
+    margin: 0;
     width: 100%;
     height: auto;
     z-index: 100; /* Assure que le footer reste au-dessus du contenu */
@@ -32,12 +32,11 @@ z-index: 1000;
   /* CSS pour le contenu principal */
   .main-content {
     margin-top: 10vh; /* Marge en haut pour éviter le chevauchement avec le header */
-    margin-bottom: 15vh; /* Marge en bas pour éviter le chevauchement avec le footer */
-
-vertical-align: auto;
+   margin-bottom: 0; /* Marge en bas pour éviter le chevauchement avec le footer */
 
 
-height: 100%;
+
+
   }
   
   
@@ -49,7 +48,7 @@ height: 100%;
     background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */
     z-index: -10;
     overflow: hidden;
-    margin-top: 14vh;
+
    
    
   
@@ -81,7 +80,7 @@ height: 100%;
   display: flex;
   align-items: center;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 15px;
   }
   
   
@@ -99,8 +98,8 @@ height: 100%;
   }
   
   .v-icon__svg {
-    width: 15px;
-    height: 15px;
+    width: 5px;
+    height: 5px;
 
   }
   .navlinks-container a {
@@ -163,8 +162,8 @@ height: 100%;
   
   .user-toggler {
 
-    width: 60px;
-    color: #3391b3;
+    width: 30px;
+    
   
   }
   
@@ -175,10 +174,7 @@ height: 100%;
   
 
   
-.form-control {
-  max-width: 60%;
-  justify-content: center;
- }
+
 
  label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

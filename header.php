@@ -19,13 +19,11 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
   <script src="tarteaucitron/tarteaucitron.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link rel="stylesheet" href="assets/css/nav.css">
   <link rel="stylesheet" href="assets/css/camera.css">
  
@@ -38,7 +36,7 @@
 
 <header>
 
-<nav class="mx-auto">
+<nav >
     
 <a href="view_index_cat.php" class="nav-icon" aria-label="homepage" aria-current="page">
         <span ><img  class="Logo" src="assets/img/images_the_district/the_district_brand/logo_transparent.png"></img>
@@ -46,7 +44,7 @@
           </a>
     
           <div class="main-navlinks">
-            <bouton type="button" class=" toggle " aria-label="Toggle Navigation" aria-expanded="false">
+            <bouton type="button" class=" toggle m-4" aria-label="Toggle Navigation" aria-expanded="false">
               <span></span>
               <span></span>
               <span></span>
@@ -68,24 +66,24 @@
       </div>
 
     
-      <div class="nav-authentication col-2">
-    <div class="shopping my-auto" >
+      <div class="nav-authentication  col-md-2 my-auto d-flex justify-content-between align-items-middle">
+    <div class="shopping " >
           <a href="#">  <h3><i class="fa fa-shopping-cart red "></i> <span class="badge badge-red">0</span></h3></a>
            
     </div>
          <div class="sign-btns  ">    <a href="SignIn.html"> 
-     <h3> <img src="assets/img/user.svg" class="user-toggler" aria-label="Sign in page" alt="user icon">
+     <img src="assets/img/user.svg" class="user-toggler" aria-label="Sign in page" alt="user icon">
            
-             <i class="fa fa-sign-in" aria-hidden="true"></i></h3></a> 
+            <h3><i class="fa fa-sign-in" aria-hidden="true"></i></h3></a> 
             </div>
     
          
           
-              <form  id="search" class="search my-auto" action="results.php" method="GET" accept-charset="utf-8">
+              <form  id="search" class="search" action="results.php" method="GET" accept-charset="utf-8">
               <input type="text" name="input" class="input" placeholder="Search" />
-              <button type="reset" class="search " id="search-button">  </button>
+              <button type="reset" class="search " id="search-button"> 
               </form>
-          
+              </button>
         
     
           </div>

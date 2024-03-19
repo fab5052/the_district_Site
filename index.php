@@ -231,12 +231,13 @@ require_once('header.php');
 
         </div>
       </div>
-
+      </div>
       <hr class="featurette-divider">
-
+   
 
   </main>
-
+  
+  </div>
 
   <?php
 
