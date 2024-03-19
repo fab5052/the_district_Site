@@ -9,9 +9,9 @@ require_once('header.php');
 
   <div class="parallax">
 
-    <div class="main-content my-auto">
+    <div class="main-content ">
 
-      <h1 >
+      <h1>
         <i class="neon-red">The</i>
         <i class="neon-blue">District</i>
       </h1>
@@ -41,7 +41,7 @@ require_once('header.php');
   
 
   
-  <div class="camera_wrap camera_magenta_skin" id="camera_wrap_1">
+  <div class="camera_wrap camera_magenta_skin position-relative " id="camera_wrap_1">
   <div data-thumb="assets/img/camera/slides/thumbs/bridge.jpg" data-src="assets/img/camera/slides/bridge.jpg">
           <div class="camera_caption fadeFromBottom">
             

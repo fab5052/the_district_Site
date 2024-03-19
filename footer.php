@@ -1,68 +1,63 @@
 <footer>
-   
-    <div class="container-fluid col-md-6 mx-auto py-auto  text-muted ">
-   
-   
-   
-      <div class="flex-row d-block ">
-   <p>@ 2017-2024 &middot;<a href="#">Tous droits &middot;</a><a href="#"> réservés</a>
-   </p><a href="#">Revenir en haut ▲</a>
-   </div>
-  
-        <div class="col-md-3">
-          <h3 class="h3">A propos</h3>
-     
-      
-            <li><a href="#">Service clients</a></li>
-            <li><a href="#">Autre</a></li>
-       
-        </div>
-     
-        <div class="col-md-3">
-          <h3 class="h3">Partners</h3>
-       
 
-            <li><a href="#">MIO</a></li>
 
-         
-        </div>
+  <p class="pull-right p-4"><a href="#">Revenir en haut ▲</a></p>
+  <div class="container-fluid ">
+<div class="row">
 
-        <div class="col-md-3">
-          <h3 class="h3">Service clents</h3>
-   
-            <li><a href="#">Chat</a></li>
-            <li><a href="#">03 22 453 352</a></li>
 
-         
-        </div>
-        
-        <div class="col-md-3">
-         
-          <h3 class="h3">Socials</h3>
-     
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        
-        </div>
-  
+
+
+
+<div class="col-md-3">
+  <h3 class="h3">A propos</h3>
+  <ul class="footer-list">
+    <li><a href="#">Historique</a></li>
+    <li><a href="#">Service clients</a></li>
+
+  </ul>
+</div>
+<div class="col-md-3">
+  <h3 class="h3">Partners</h3>
+  <ul class="footer-list">
+
+    <li><a href="#">MIO</a></li>
+
+  </ul>
+</div>
+<div class="col-md-3">
+  <h3 class="h3">Service clents</h3>
+  <ul class="footer-list">
+    <li><a href="#">Chat</a></li>
+    <li><a href="#">03 22 453 352</a></li>
+
+  </ul>
+</div>
+<div class="col-md-3">
+  <h3 class="h3">Socials</h3>
+  <ul class="footer-list footer-list-inline">
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+  </ul>
+</div>
+
+<p class="droits m-4">@ 2017-2024 &middot;<a href="#">Tous droits &middot;</a><a href="#"> réservés</a></p>
+</div>
+
+</footer>
+
+
 
 
 </div>
 
-
-  </footer>
-
-
-
-  </div>
-
  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script> 
-  <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script> <script src="carousel.js" ></script> 
-  <script src="toggle.js"></script>
-  <script src="plat.js"></script>
+  <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script> <script src="assets/js/carousel.js" ></script> 
+  <script src="assets/js/toggle.js"></script>
+  <script src="assets/js/plat.js"></script>
 
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -76,18 +71,18 @@
 	<script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 	<script src='//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script> 
 	<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 
-    <script src="js/jquery.js"></script>
+    <script src="assets/js/jquery.js"></script>
 
     
-<script src="js/bootstrap-tooltip.js"></script>
-<script src="js/bootstrap-popover.js"></script>
+<script src="assets/js/bootstrap-tooltip.js"></script>
 
-<script src="js/bootstrap-carousel.js"></script>
 
-<script src="js/jquery.easing.1.3.js"></script>
-<script src='js/camera.min.js'></script>
+<script src="assets/js/bootstrap-carousel.js"></script>
+
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src='assets/js/camera.min.js'></script>
 <script>
 jQuery(function(){
   

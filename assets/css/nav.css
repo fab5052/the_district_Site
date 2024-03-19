@@ -8,9 +8,9 @@ header {
     position: fixed;
 
     top: 0;
-    width: 100%;
-    height: 15vw;
-
+    width: 100vw;
+    
+z-index: 1000;
    /
     /* Autres styles personnalisés selon vos besoins */
   }
@@ -20,21 +20,24 @@ header {
  
     bottom: 0;
     width: 100%;
-    height: 15vh;
+    height: auto;
     z-index: 100; /* Assure que le footer reste au-dessus du contenu */
-    color: #3391b3; /* Couleur du texte dans le footer */
+   
   
 
-    background-color: #333;
+    background-color: #6b6666f6; /* Couleur de fond du header */
   
   }
   
   /* CSS pour le contenu principal */
   .main-content {
-    margin-top: 30vw; /* Marge en haut pour éviter le chevauchement avec le header */
-    margin-bottom: 20vh; /* Marge en bas pour éviter le chevauchement avec le footer */
-  margin: 3%;
+    margin-top: 10vh; /* Marge en haut pour éviter le chevauchement avec le header */
+    margin-bottom: 15vh; /* Marge en bas pour éviter le chevauchement avec le footer */
 
+vertical-align: auto;
+
+
+height: 100%;
   }
   
   
@@ -46,6 +49,7 @@ header {
     background-repeat: no-repeat; /* Empêche l'image de se répéter en fonction de la taille d'écran */
     z-index: -10;
     overflow: hidden;
+    margin-top: 14vh;
    
    
   
@@ -55,7 +59,7 @@ header {
   nav {
     display: flex;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   background-color: #6b6666f6; /* Couleur de fond du header */
   align-items: center;
 
@@ -281,10 +285,8 @@ textarea {
   
   
   
-  
-  
-  
   h1 {
+ 
     font-family: "neon-tubes-2-regular";
     src:
       url("https://assets.codepen.io/2585/NeonTubes2.otf") format("woff"),
@@ -306,6 +308,7 @@ textarea {
     }
     
     h1 > i {
+
     color: var(--neon);
     text-shadow: 
       0 0 20px var(--neon-glow),
@@ -337,6 +340,7 @@ textarea {
     h1 {
     text-align: center;
     font-family: "neon-tubes-2-regular", sans-serif;
+  
   
     }
   

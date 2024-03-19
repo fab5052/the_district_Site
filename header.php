@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="assets/css/nav.css">
   <link rel="stylesheet" href="assets/css/camera.css">
-  <link  rel="stylesheet" href="assets/css/style.css">
+ 
 
 
 </head>
@@ -38,9 +38,9 @@
 
 <header>
 
-<nav>
+<nav class="mx-auto">
     
-<a href="index.php" class="nav-icon" aria-label="homepage" aria-current="page">
+<a href="view_index_cat.php" class="nav-icon" aria-label="homepage" aria-current="page">
         <span ><img  class="Logo" src="assets/img/images_the_district/the_district_brand/logo_transparent.png"></img>
     
           </a>
@@ -58,7 +58,7 @@
           </div>
           <div class="navlinks-container d-flex  ">
     
-            <h3><a class="nav-link " href="index.html" aria-current="page">Accueil</a></h3>
+   
 
         <h3><a class="nav-link " href="view_index_cat.php" aria-current="page">Accueil</a></h3>
         <h3><a class="nav-link" href="categories.php">Catégories</a></h3>
@@ -68,8 +68,8 @@
       </div>
 
     
-      <div class="nav-authentication col-2 d-flex   ">
-    <div class="shopping" >
+      <div class="nav-authentication col-2">
+    <div class="shopping my-auto" >
           <a href="#">  <h3><i class="fa fa-shopping-cart red "></i> <span class="badge badge-red">0</span></h3></a>
            
     </div>
@@ -81,11 +81,11 @@
     
          
           
-              <form  id="search" class="search" action="results.php" method="GET" accept-charset="utf-8">
+              <form  id="search" class="search my-auto" action="results.php" method="GET" accept-charset="utf-8">
               <input type="text" name="input" class="input" placeholder="Search" />
-              <button type="reset" class="search " id="search-button">
+              <button type="reset" class="search " id="search-button">  </button>
               </form>
-            </button>
+          
         
     
           </div>
