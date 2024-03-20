@@ -38,13 +38,13 @@
 
 <nav >
     
-<a href="view_index_cat.php" class="nav-icon" aria-label="homepage" aria-current="page">
+<a href="view_index_cat.php" class="nav-icon justify-content-center" aria-label="homepage" aria-current="page">
         <span ><img  class="Logo justify-content-center position-relative" src="assets/img/images_the_district/the_district_brand/logo_transparent.png"></img>
     
           </a>
     
           <div class="main-navlinks">
-            <bouton type="button" class=" toggle m-4" aria-label="Toggle Navigation" aria-expanded="false">
+            <bouton type="button" class=" toggle m-5" aria-label="Toggle Navigation" aria-expanded="false">
               <span></span>
               <span></span>
               <span></span>
@@ -54,14 +54,14 @@
     
     
           </div>
-          <div class="navlinks-container col-md-4 d-flex justify-content-center   ">
+          <div class="navlinks-container col-md-6 d-flex justify-items-center">
     
    
 
-        <h3><a class="nav-link " href="view_index_cat.php" aria-current="page">Accueil</a></h3>
-        <h3><a class="nav-link" href="categories.php">Catégories</a></h3>
-        <h3><a class="nav-link" href="plat.php">Plats</a></h3>
-        <h3><a class="nav-link" href="contact.php">Contact</a></h3>
+        <a class="nav-link " href="view_index_cat.php" aria-current="page">Accueil</a><hr class="featurette-divider">
+        <a class="nav-link" href="categories.php">Catégories</a><hr class="featurette-divider">
+        <a class="nav-link" href="plat.php">Plats</a>
+        <a class="nav-link" href="contact.php">Contact</a>
 
       </div>
 

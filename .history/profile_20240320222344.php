@@ -8,7 +8,7 @@
 session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: home.html');
+	header('Location: SignIn.html');
 	exit;
 }
 
@@ -24,7 +24,7 @@ if ( mysqli_connect_errno() ) {
 }
 
 // We don't have the password or email info stored in sessions, so instead, we can get the results from the database.
-$stmt = $conn->prepare('SELECT password, email FROM accounts WHERE id = ?');
+$stmt = $con->prepare('SELECT password, email FROM accounts WHERE id = ?');
 // In this case we can use the account ID to get the account info.
 $stmt->bind_param('i', $_SESSION['id']);
 $stmt->execute();
@@ -33,3 +33,11 @@ $stmt->fetch();
 $stmt->close();
 ?>
 
+
+
+
+
+
+require_once('footer.php');
+
+?>

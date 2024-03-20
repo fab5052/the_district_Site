@@ -74,7 +74,7 @@ require_once('header.php');
 </div>
 </div>
 
-
+<hr class="featurette-divider">
 
 <div class="container-fluid  col-sm-12">
 
