@@ -39,7 +39,7 @@
 <nav >
     
 <a href="view_index_cat.php" class="nav-icon" aria-label="homepage" aria-current="page">
-        <span ><img  class="Logo" src="assets/img/images_the_district/the_district_brand/logo_transparent.png"></img>
+        <span ><img  class="Logo justify-content-center position-relative" src="assets/img/images_the_district/the_district_brand/logo_transparent.png"></img>
     
           </a>
     
@@ -54,7 +54,7 @@
     
     
           </div>
-          <div class="navlinks-container d-flex  ">
+          <div class="navlinks-container col-md-4 d-flex justify-content-center   ">
     
    
 
@@ -66,20 +66,20 @@
       </div>
 
     
-      <div class="nav-authentication  col-md-2 my-auto d-flex justify-content-between align-items-middle">
+      <div class="nav-authentication col-md-2 my-auto m-0 d-flex align-items-center vertical-align-center">
     <div class="shopping " >
-          <a href="#">  <h3><i class="fa fa-shopping-cart red "></i> <span class="badge badge-red">0</span></h3></a>
+          <a href="#"> <i class="fa fa-shopping-cart red "></i> <span class="badge badge-red">0</span></a>
            
     </div>
-         <div class="sign-btns  ">    <a href="SignIn.html"> 
+         <div class="sign-btns d-block">    <a href="SignIn.html"> 
      <img src="assets/img/user.svg" class="user-toggler" aria-label="Sign in page" alt="user icon">
            
-            <h3><i class="fa fa-sign-in" aria-hidden="true"></i></h3></a> 
+          <i class="fa fa-sign-in" aria-hidden="true"></i></a> 
             </div>
     
          
           
-              <form  id="search" class="search" action="results.php" method="GET" accept-charset="utf-8">
+              <form  id="search" class="search d-flex align-items-middle" action="results.php" method="GET" accept-charset="utf-8">
               <input type="text" name="input" class="input" placeholder="Search" />
               <button type="reset" class="search " id="search-button"> 
               </form>

@@ -1,9 +1,8 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  }
-  
+
+ 
+ body {
+  margin: none;
+ }
 header {
     position: fixed;
 
@@ -88,7 +87,7 @@ z-index: 1000;
   .nav-icon img {
   width: 120px;
   height: 125px;
-  
+  position: relative;
   }
   
   
@@ -96,12 +95,7 @@ z-index: 1000;
   .toggle {
   display: none;
   }
-  
-  .v-icon__svg {
-    width: 5px;
-    height: 5px;
 
-  }
   .navlinks-container a {
   display: flex;
   margin: 0 10px;
@@ -119,7 +113,7 @@ z-index: 1000;
     display: flex;
     position: relative;
     margin: 0 10px;
-    width: 100%;
+    width: 70%;
     color: #657075;
     font-size: 25px;
   font-weight: 800;
@@ -152,9 +146,10 @@ z-index: 1000;
   .nav-authentication {
     display: flex;
   vertical-align: middle;
-  
-  justify-content: space-around;
-  color: #3391b3;
+    min-width: 20vh;
+ 
+  justify-content: space-evenly;
+  color: #f0f5f6;
   order: 3;
   }
   
@@ -162,7 +157,7 @@ z-index: 1000;
   
   .user-toggler {
 
-    width: 30px;
+    width: 20px;
     
   
   }
@@ -227,6 +222,11 @@ textarea {
   
   }
   
+  #camera_wrap_1 {
+    width: 100%;
+   height: 5%;
+    
+  }
   
   
   .carousel{
@@ -349,6 +349,57 @@ textarea {
   
   }
   
+  .login {
+  	width: 400px;
+  	background-color: #ffffff;
+  	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  	margin: 100px auto;
+}
+.login h1 {
+  	text-align: center;
+  	color: #5b6574;
+  	font-size: 24px;
+  	padding: 20px 0 20px 0;
+  	border-bottom: 1px solid #dee0e4;
+}
+.login form {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	padding-top: 20px;
+}
+.login form label {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50px;
+  	height: 50px;
+  	background-color: #3274d6;
+  	color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="text"] {
+  	width: 310px;
+  	height: 50px;
+  	border: 1px solid #dee0e4;
+  	margin-bottom: 20px;
+  	padding: 0 15px;
+}
+.login form input[type="submit"] {
+  	width: 100%;
+  	padding: 15px;
+ 	margin-top: 20px;
+  	background-color: #3274d6;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover {
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
+
   .accordion-group {
     overflow: hidden;
     margin: 0 auto;

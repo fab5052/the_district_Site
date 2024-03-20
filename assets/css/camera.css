@@ -3,6 +3,18 @@
 *	GENERAL
 *
 **************************/
+#camera_wrap_1 {
+	min-width: 100vw;
+	max-height: 20vw;
+    margin: none;
+	left: 0;
+	
+	right: 0;
+	top: 30;
+	
+	
+}
+
 .camera_wrap a, .camera_wrap img, 
 .camera_wrap ol, .camera_wrap ul, .camera_wrap li,
 .camera_wrap table, .camera_wrap tbody, .camera_wrap tfoot, .camera_wrap thead, .camera_wrap tr, .camera_wrap th, .camera_wrap td
@@ -17,15 +29,18 @@
 	padding: 0;
 	vertical-align: baseline;
 	list-style: none
+
 }
 .camera_wrap {
 	display: none;
 	float: left;
 	position: relative;
 	z-index: 0;
+	max-height: 10%;
 }
 .camera_wrap img {
 	max-width: none!important;
+	
 }
 .camera_fakehover {
 	height: 100%;
@@ -34,17 +49,16 @@
 	width: 100%;
 	z-index: 1;
 }
-.camera_wrap {
-	width: 100%;
-}
+
 .camera_src {
 	display: none;
 }
 .cameraCont, .cameraContents {
 	height: 100%;
 	position: relative;
-	width: 100%;
+	width: 100vw;
 	z-index: 1;
+	margin: 0;
 }
 .cameraSlide {
 	bottom: 0;
