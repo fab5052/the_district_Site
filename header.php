@@ -23,10 +23,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
   <script src="tarteaucitron/tarteaucitron.js"></script>
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+ <link rel="stylesheet" href="assets/css/camera.css">
   <link rel="stylesheet" href="assets/css/nav.css">
-  <link rel="stylesheet" href="assets/css/camera.css">
- 
+
 
 
 </head>
@@ -71,19 +71,32 @@
           <a href="#"> <i class="fa fa-shopping-cart red "></i> <span class="badge badge-red">0</span></a>
            
     </div>
-         <div class="sign-btns d-block">    <a href="SignIn.html"> 
+ 
+         <div class="sign-btns d-block">    <a href="login.php"> 
      <img src="assets/img/user.svg" class="user-toggler" aria-label="Sign in page" alt="user icon">
            
           <i class="fa fa-sign-in" aria-hidden="true"></i></a> 
             </div>
+  
     
+
+    <div class="navtop">
+        <div>
          
-          
-              <form  id="search" class="search d-flex align-items-middle" action="results.php" method="GET" accept-charset="utf-8">
+            <a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
+            <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+        </div>
+    </div>
+
+            
+
+                <form action="results.php" method="post"accept-charset="utf-8">
               <input type="text" name="input" class="input" placeholder="Search" />
               <button type="reset" class="search " id="search-button"> 
               </form>
               </button>
+            </div>
+            </div>
         
     
           </div>

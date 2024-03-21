@@ -384,7 +384,7 @@ textarea {
   .navtop div a:hover {
     color: #eaebed;
   }
-  body.loggedin {
+  .loggedin {
     background-color: #f3f4f7;
   }
   .content {
