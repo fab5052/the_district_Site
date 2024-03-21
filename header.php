@@ -58,8 +58,8 @@
     
    
 
-        <a class="nav-link " href="view_index_cat.php" aria-current="page">Accueil</a><hr class="featurette-divider">
-        <a class="nav-link" href="categories.php">Catégories</a><hr class="featurette-divider">
+        <a class="nav-link " href="index.php" aria-current="page">Accueil</a>
+        <a class="nav-link" href="categorie.php">Catégories</a>
         <a class="nav-link" href="plat.php">Plats</a>
         <a class="nav-link" href="contact.php">Contact</a>
 

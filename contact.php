@@ -1,15 +1,14 @@
 <?php
 
 require_once('header.php');
-require_once('view_index_cat.php');
-require_once('view_plat_page.php');
+
 
 ?>
     
-    <div class="parallax " >
 
-      
-<main class="main-content">
+    <div class="parallax">
+
+<div class="main-content m-none pt-4  ">
 
 
    <!-- <div class="_2HZ1tocj _3OOC9meJ" data-uniqid="1"><svg alt="" aria-label="" xmlns="http://www.w3.org/2000/svg"
@@ -61,98 +60,101 @@ require_once('view_plat_page.php');
 
 
 
-<fieldset >
+<div class="container-fluid">
+  <div class="row p-3 justify-content-center">
+    <div class="col-xs-10 col-sm-8 col-md-6 col-lg-5">
 
-  <div class="container col-3 justify-content-center position-relative ">
-    <div class="row ">
+      
      
- <form method="POST" name="inscription" id="validationCustom" class=" needs-validation " novalidate>
-
-        <div class="col-md-6 ">
+ <form method="POST"  name="inscription" id="validationCustom" class="inscription needs-validation " novalidate>
+  <div class="input-group has-validation">
+  <div class="valid-feedback">Semble correcte!</div>
        <span>   <label for="validationCustom01" class="form-label">Prénom</label></span>
-          <input type="text" class="form-control" id="validationCustom01" placeholder="Jean" required>
+    <input type="text" class="form-control" id="validationCustom01" placeholder="Jean" required>
+      </div>       
+          
+      <div class="input-group has-validation">
           <div class="valid-feedback">Semble correcte!</div>
-        </div>
-
-
-        <div class="col-md-6 ">     
-          <div class="valid-feedback">Semble correcte!</div>
-          <span> <label for="validationCustom02" class="form-label">Nom</label></span>
-          <input type="text" class="form-control" id="validationCustom02" placeholder="Durand" required>
-        </div>
+          <span> <label for="validationCustom" class="form-label">Nom</label></span>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Durand" required>
+      </div>  
    
      
-        <div class="col-md-6 p-3">
+           <div class="input-group has-validation">
+
           <span><label for="validationCustomUsername" class="form-label">Username</label></span>
-          <div class="input-group has-validation">
-            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+       
+            <input type="text" class="form-control" id="validationCustom01" aria-describedby="inputGroupPrepend"
               required>
             <div class="valid-feedback">Semble correcte!</div>
             <div class="invalid-feedback">Choisissez un nom d'utilisateur entre 8 et 12 caractères.</div>
-          </div>
-          </div>
-      
-        <div class="col-md-6 p-3">
-          <label for="validationCustom03" class="form-label">Ville</label>
-          <input type="text" class="form-control" id="validationCustom03" required>
+  </div>  
+         
+            <div class="input-group has-validation">
+
+          <div class="valid-feedback">Semble correcte!</div>
+          <label for="validationCustom" class="form-label">Ville</label>
+          <input type="text" class="form-control" id="validationCustom01" required>
           <div class="invalid-feedback">Chosissez un nom de ville correcte.</div>
-        </div>
+      </div>  
+      
+      <div class="input-group has-validation">
 
-        <div class="col-md-6 ">
-          <label for="validationCustom05" class="form-label">Email</label>
+        <div class="valid-feedback">Semble correcte!</div>
+          <label for="validationCustom" class="form-label">Email</label>
 
-          <input type="email" class="form-control" id="validationCustom05" aria-describedby="emailHelpId"
+          <input type="email" class="form-control" id="validationCustom01" aria-describedby="emailHelpId"
             placeholder="abc@mail.com" required>
      
         <div class="invalid-feedback">L'adresse doit contenir un "@". </div>
-       
-        </div>
-  
+        
+        </div>  
+     
+    
 
-        <div class="col-md-6">
-          <label for="validationCustom04" class="form-label">Sujets</label>
-          <select class="form-select" id="validationCustom04" required>
-
-            <option value="" selected>Veuillez séléctionner un sujet</option>
+          <label for="validationCustom" class="form-label">Sujets</label>
+          <select class="form-select" id="validationCustom01" required>
+            <option selected disabled value="">Choisir un sujet...</option> 
             <option value="produit">Question sur un produit</option>
             <option value="reclamation">Réclamation</option>
             <option value="autres">Autres</option>        
-          <option selected disabled value="">Choisir un sujet...</option>  
+  
         </select>     
-          
-        </div>
-
-        <div class="col-md-6">
-          <label class="form-label">Votre question:</label>
-          <textarea class="form-label col " name="question" id="question" placeholder="* Maximum 50 caractères"
-            required></textarea>
-
-          <div class="invalid-feedback">* Remplir le champ question.</div>
-        </div>
-
-        <div class="col-md-6">
-        <div class="form-check ">     
-          <input class="form-check-input" type="checkbox" value="accepter" id="traitement" name="traitement" required>
-        </div>
-    </div>
-
-    <div class="col-md-6">
-          <label class="form-check-label" for="traitement">* J'accepte le traitement informatique de ce
-            formulaire.</label>
-          <div class="invalid-feedback">Vous devez valider.</div>
-        </div>
-      
-
-        <div>
-          <button class="btn btn-outline-primary" style="color:primary; " type="submit" value="Envoyer">Envoyer</button>
-          <button class="btn btn-outline-danger" type="reset" value="Annuler">Annuler</button>
-        </div>
-
+        <div class="invalid-feedback">* Choisir un sujet.</div>
 
  
+            <div class="input-group has-validation">
+
+          <label for="validationCustom" class="form-label"></label>
+          <label class="form-label">Votre question:</label><br>
+          <textarea class="form-input  " name="question" id="question" maxlength="50" placeholder="* Maximum 50 caractères"
+            required></textarea>
+
+   <div class="invalid-feedback">* Remplir le champ question.</div>
+   </div>   
+
+      <div class="input-group has-validation">
+
+        <div class="form-check ">     
+          <input class="form-check-input" type="checkbox" value="accepter" id="traitement" name="traitement" required>
+       
+
+          <label class=" row form-check-label" for="traitement">&nbsp&nbsp  * J'accepte le traitement informatique de ce
+            formulaire.</label>
+          <div class="invalid-feedback">Vous devez valider!.</div>
+        </div>
+      </div>   
+
+        <div>
+          <button class="btn btn-primary" type="submit" value="Envoyer">Envoyer</button>
+          <button class="btn btn-danger" type="reset" value="Annuler">Annuler</button>
+        </div>
+
+     
+      </form>
 
 
-       <div class="d-block  ">
+       <div class="d-flex justify-content-center a-iconlign-items-middle ">
                 By creating an account, you agree to <a
                   href="/gp/help/customer/display.html/ref=ap_register_notification_condition_of_use?ie=UTF8&amp;nodeId=643006">Conditions
                   of Use</a> and <a
@@ -160,14 +162,10 @@ require_once('view_plat_page.php');
                   Notice</a>.
               </div>
            
-            </div>
+         
 
+      </fieldset>
 
-</div>
-
-     </form>
-      
- </fieldset>
 
 
  <!--<div class="a-box a-spacing-extra-large">
@@ -465,6 +463,3 @@ require_once('footer.php');
             
 ?>
 
-</body>
-
-</html>

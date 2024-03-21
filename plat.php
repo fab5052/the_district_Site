@@ -1,10 +1,9 @@
 <?php
 
 require_once('header.php');
-require_once('view_index_cat.php');
-require_once('view_plat_page.php');
 
 ?>
+
 
   <div class="parallax ">
 
@@ -92,34 +91,17 @@ require_once('view_plat_page.php');
           </div>-->
 
 
-
- 
-      
-          <div id="menu-container" >
-
-    <select id="categoryFilter" class="form-control justify-content-center justify-items-center position-relative   mb-3" 
-    style="width: 40% ;height: 40px; opacity: 0.75; box-shadow: 2px 2px 10px 2px rgba(49, 34, 34, 0.9) inset; border: 1px #403737 solid; border-right: 1px #0f0d0d89 solid; text-align: center; font-size: 20px; font-family: Calibri; letter-spacing: 2px">
-    <option value="all">Cliquez et trouver...</option>
-
-  </select>
-     
-        
-          <div  class="card-group " >
-          
-</div>
- 
-</div>
-
-
 </main>
 
 
+ 
 
+  <?php
 
+require_once('view/view_plat_page.php');
 
+?>
 
-
-  </div>
 
 
   <?php
@@ -128,7 +110,3 @@ require_once('footer.php');
 
 ?>
 
-
-</body>
-
-</html>

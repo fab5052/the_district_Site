@@ -9,7 +9,7 @@ require_once('header.php');
 
   <div class="parallax">
 
-    <div class="main-content m-none pt-4 top-45 ">
+    <div class="main-content m-none pt-4  ">
 
       <h1 class="p-4">
         <i class="neon-red">The</i>
