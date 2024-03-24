@@ -33,4 +33,3 @@ JOIN categorie ON categorie.id = plat.id_categorie");
 $cat_plat =$conn->prepare("SELECT *
 FROM plat
 WHERE id_categorie = :id_categorie");
-?>

@@ -1,19 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<?php
+session_start();
+// Include functions and connect to the database using PDO MySQL
+include 'DAO.php';
 
-  <!-- Bootstrap core CSS -->
+require_once('');
 
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-<link rel="stylesheet" href="assets/css/nav.css">
+require_once('header.php');
 
-</head>
 
-<body>
+?>
+
+
+
+
+
+
+
+
 
  <!--   <header>
 
@@ -92,7 +96,7 @@
       
         
         </nav>
-      </header>
+      </header>-->
     
     
     
@@ -106,7 +110,7 @@
           <h1 class="pt-4 top-45">
             <i class="neon-red">Créer</i>
             <i class="neon-blue">Compte</i>
-          </h1>-->
+          </h1>
           <body class="loggedin">
             <div class="login">
               <h1>Login</h1>
@@ -123,8 +127,10 @@
               </form>
             </div>
        
-       
-              
+            </main>
+  
+  </div>
+         
           <!--<div id="stage" class="fade-in-forward" style="opacity: 1;"><div>
             <div class="card">
               <header class="mb-8">
@@ -213,8 +219,4 @@
 
     <script src="toggle.js"></script>
     <script src="script.js"></script>-->
-           
 
-
-</body>
-</html>

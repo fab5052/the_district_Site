@@ -12,4 +12,3 @@ function connect_database () {
         die("Fin du script");
     }
 }
-?>
