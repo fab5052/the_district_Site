@@ -5,7 +5,7 @@
 session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: login.php');
+	header('Location: home.html');
 	exit;
 }
 
@@ -21,27 +21,29 @@ $stmt->execute();
 $stmt->bind_result($password, $email);
 $stmt->fetch();
 $stmt->close();
-    
 
 ?>
 
+<?php
+
 <div class="content">
-    <h2>Profile Page</h2>
-    <div>
-        <p>Your account details are below:</p>
-        <table>
-            <tr>
-                <td>Username:</td>
-                <td><?= isset($_SESSION['name']) ? htmlspecialchars($_SESSION['name']) : '' ?></td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td><?= isset($password) ? htmlspecialchars($password) : '' ?></td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td><?= isset($email) ? htmlspecialchars($email) : '' ?></td>
-            </tr>
-        </table>
-    </div>
-</div>
+			<h2>Profile Page</h2>
+			<div>
+				<p>Your account details are below:</p>
+				<table>
+					<tr>
+						<td>Username:</td>
+						<td><?=htmlspecialchars($_SESSION['name'], ENT_QUOTES)?></td>
+					</tr>
+					<tr>
+						<td>Password:</td>
+						<td><?=htmlspecialchars($password, ENT_QUOTES)?></td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td><?=htmlspecialchars($email, ENT_QUOTES)?></td>
+					</tr>
+				</table>
+			</div>
+
+?>

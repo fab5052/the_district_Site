@@ -24,24 +24,3 @@ $stmt->close();
     
 
 ?>
-
-<div class="content">
-    <h2>Profile Page</h2>
-    <div>
-        <p>Your account details are below:</p>
-        <table>
-            <tr>
-                <td>Username:</td>
-                <td><?= isset($_SESSION['name']) ? htmlspecialchars($_SESSION['name']) : '' ?></td>
-            </tr>
-            <tr>
-                <td>Password:</td>
-                <td><?= isset($password) ? htmlspecialchars($password) : '' ?></td>
-            </tr>
-            <tr>
-                <td>Email:</td>
-                <td><?= isset($email) ? htmlspecialchars($email) : '' ?></td>
-            </tr>
-        </table>
-    </div>
-</div>

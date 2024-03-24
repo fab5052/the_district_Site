@@ -16,9 +16,21 @@ function connect_database () {
 session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: register.html');
+	header('Location: login.php');
 	exit;
+}
 
+function connect_database () {
+    try {
+        $conn = new PDO("mysql:host=localhost;dbname=the_district", "root", "Afpa1234");
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo "Connecté à la base de données:<br>";
+        return $conn;
+    } catch (Exception $e) {
+        echo "Erreur : " .$e->getMessage() . "<br>";
+        echo "N° :" .$e->getCode();
+        die("Fin du script");
+    }
 }
 
 ?>
@@ -50,7 +62,7 @@ if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?
 			$_SESSION['loggedin'] = TRUE;
 			$_SESSION['name'] = $_POST['username'];
 			$_SESSION['id'] = $id;
-			header('Location: home.php');			
+			header('Location: index.php');			
 			echo 'Incorrect username and/or password!';
 		}
 	} else {

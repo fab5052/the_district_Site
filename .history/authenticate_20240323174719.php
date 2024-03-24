@@ -16,9 +16,8 @@ function connect_database () {
 session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: register.html');
+	header('Location: login.php');
 	exit;
-
 }
 
 ?>
@@ -50,7 +49,7 @@ if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?
 			$_SESSION['loggedin'] = TRUE;
 			$_SESSION['name'] = $_POST['username'];
 			$_SESSION['id'] = $id;
-			header('Location: home.php');			
+			header('Location: index.php');			
 			echo 'Incorrect username and/or password!';
 		}
 	} else {

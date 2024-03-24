@@ -1,4 +1,6 @@
-*,::after,::before {
+
+
+/**,::after,::before {
     box-sizing: border-box;
     border-width: 0;
     border-style: solid;
@@ -1664,4 +1666,4 @@ input, select, textarea {
 	font-weight:normal;
 	}
 }
-/*==========================================*/
+/*
