@@ -3,7 +3,7 @@ session_start();
 // Include functions and connect to the database using PDO MySQL
 include 'DAO.php';
 
-require_once('');
+require_once('index.php');
 
 
 require_once('header.php');
