@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  
 }
 
 hr {
@@ -11,17 +11,19 @@ hr {
   border-top-width: 1px
 }
 
-
+body {
+  background-color: rgba(40, 44, 28, 0.432);
+}
 
 /* CSS pour le contenu principal */
 .main-content {
-  margin-top: 10vh;
+  margin-top: 25vh;
   /* Marge en haut pour éviter le chevauchement avec le header */
   margin-bottom: 20vh;
   /* Marge en bas pour éviter le chevauchement avec le footer */
   height: 100%;
-vertical-align: baseline;
-  background-color: rgba(43, 51, 15, 0.432);
+vertical-align: auto;
+
 
 }
 
@@ -56,7 +58,7 @@ header {
 /* CSS pour le footer */
 footer {
 position: fixed;
-  margin-bottom: 0;
+  top: 100;
   width: 100%;
   height: auto;
   z-index: 100;
@@ -64,7 +66,7 @@ position: fixed;
 
 
 
-  background-color: #6b6666f6;
+  background-color: #504a4af6;
   /* Couleur de fond du header */
 
 }
@@ -87,7 +89,7 @@ nav {
 
 }
 
- nav a {
+a {
   font-size: 20px;
   color: #7c95c5;
   text-shadow: solid 4px #d9d9de;
@@ -145,13 +147,30 @@ nav {
   	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
   	margin: 100px auto;
 }
-.login h1 {
+.login h2 {
   	text-align: center;
-  	color: #5b6574;
-  	font-size: 24px;
+  	color: #c3c5c9;
+  	font-size: 30px;
+    font-weight: bold;
   	padding: 20px 0 20px 0;
   	border-bottom: 1px solid #dee0e4;
 }
+
+.reg h4 {
+  text-align: center;
+  color: #fbfcfd;
+vertical-align: middle;
+  
+}
+
+.reg h5 {
+  text-align: center;
+  color: #767a80;
+  vertical-align: middle;
+  font-size: 15px;
+
+}
+
 .login form {
   	display: flex;
   	flex-wrap: wrap;

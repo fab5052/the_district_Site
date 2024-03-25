@@ -64,31 +64,11 @@ require_once('header.php');
       </h1>
 
 
+      <?php
 
+require_once('view/view_plat_page.php');
 
-
-
-            <!--        <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-12 mb-0 d-flex p-3 justify-content-center">
-                <a href="#" class="image-link position-relative">
-                  <img src="assets/images_the_district/food/lasagnes_viande.jpg" alt="Food-Name-6340"
-                    class="img-thumbnail m-3">
-                </a>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 mb-0 d-flex p-3 justify-content-center">
-                <a href="#" class="image-link position-relative">
-                  <img src="assets/images_the_district/food/spaghetti-legumes.jpg" alt="Food-Name-433"
-                    class="img-thumbnail m-3">
-                </a>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-12 mb-0 d-flex p-3 justify-content-center">
-                <a href="#" class="image-link position-relative">
-                  <img src="assets/images_the_district/food/pizza-margherita.jpg" alt="salad1"
-                    class="img-thumbnail m-3">
-                </a>
-              </div>
-            </div>
-          </div>-->
+?>
 
 
 </main>
@@ -96,11 +76,7 @@ require_once('header.php');
 
     </div>
 
-  <?php
 
-require_once('view/view_plat_page.php');
-
-?>
 
 
 

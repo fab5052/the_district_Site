@@ -38,7 +38,7 @@
 
 <nav >
     
-<a href="view_index_cat.php" class="nav-icon justify-content-center" aria-label="homepage" aria-current="page">
+<a href="home.php" class="nav-icon justify-content-center" aria-label="homepage" aria-current="page">
         <span ><img  class="Logo justify-content-center position-relative" src="assets/img/images_the_district/the_district_brand/logo_transparent.png"></img>
     
           </a>
