@@ -1,35 +1,25 @@
 <?php
-
-function connect_database () {
-    try {
-        $conn = new PDO("mysql:host=localhost;dbname=the_district", "root", "Afpa1234");
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "Connecté à la base de données:<br>";
-        return $conn;
-    } catch (Exception $e) {
-        echo "Erreur : " .$e->getMessage() . "<br>";
-        echo "N° :" .$e->getCode();
-        die("Fin du script");
-    }
-}
-
 session_start();
-// If the user is not logged in redirect to the login page...
-if (!isset($_SESSION['loggedin'])) {
-	header('Location: register.html');
-	exit;
-
+// Change this to your connection info.
+$DATABASE_HOST = 'localhost';
+$DATABASE_USER = 'admin';
+$DATABASE_PASS = 'Afpa1234';
+$DATABASE_NAME = 'the_district';
+// Try and connect using the info above.
+$conn = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+if ( mysqli_connect_errno() ) {
+	// If there is an error with the connection, stop the script and display the error.
+	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
 
-?>
 
-<?php
 // Now we check if the data from the login form was submitted, isset() will check if the data exists.
 if ( !isset($_POST['username'], $_POST['password']) ) {
 	// Could not get the data that should have been sent.
 	exit('Please fill both the username and password fields!');
 }
 ?>
+
 <?php
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
 if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?')) {
@@ -50,7 +40,7 @@ if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?
 			$_SESSION['loggedin'] = TRUE;
 			$_SESSION['name'] = $_POST['username'];
 			$_SESSION['id'] = $id;
-			header('Location: home.php');			
+			header('Location: \home.php');			
 			echo 'Incorrect username and/or password!';
 		}
 	} else {

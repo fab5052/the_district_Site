@@ -94,7 +94,7 @@ require_once('header.php');
 </main>
 
 
- 
+    </div>
 
   <?php
 

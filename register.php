@@ -1,7 +1,7 @@
 <?php
 // Change this to your connection info.
 $DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
+$DATABASE_USER = 'admin';
 $DATABASE_PASS = 'Afpa1234';
 $DATABASE_NAME = 'the_district';
 // Try and connect using the info above.
@@ -66,6 +66,7 @@ mail($_POST['email'], $subject, $message, $headers);
 echo 'Please check your email to activate your account!';*/
 
 	echo 'You have successfully registered! You can now login!';
+	header('Location:login.php');
 } else {
 	// Something is wrong with the SQL statement, so you must check to make sure your accounts table exists with all three fields.
 	echo 'Could not prepare statement!';

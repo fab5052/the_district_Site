@@ -1,11 +1,16 @@
 <?php
+// We need to use sessions, so you should always start sessions using the below code.
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: login.php');
+	exit;
+}
+?>
+
+<?php
 
 require_once('header.php');
-
-
-
-
-
 
 ?>
 
@@ -24,7 +29,7 @@ require_once('header.php');
 
 
 
-<div class="featured">
+<!-- <div class="featured">
     <h2>Gadgets</h2>
     <p>Essential gadgets for everyday use</p>
 </div>
@@ -44,31 +49,8 @@ require_once('header.php');
         </a>
         <?php endforeach; ?>
     </div>
-</div>
+</div> -->
 
-
-
-     <!-- <div class="container-fluid d-flex position-relative justify-content-center">
-        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-         
-          <div id="carouseId" class="carousel-inner">
-           
-            <figure id="spinner" class="carousel-inner" >
-
-     
-            </div>
-  
-          </figure>
-          <a >
-            <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
-          </a>
-          <a>
-            <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span> 
-          </a>
-       
-    </div>
-      </div>
-    -->
 
   
 <div class="container-fluid w-100 d-flex justify-content-center">

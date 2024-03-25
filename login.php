@@ -1,15 +1,10 @@
 <?php
-session_start();
-// Include functions and connect to the database using PDO MySQL
-include 'DAO.php';
-
-require_once('index.php');
-
 
 require_once('header.php');
 
 
 ?>
+
 
 
 
@@ -111,7 +106,7 @@ require_once('header.php');
             <i class="neon-red">Créer</i>
             <i class="neon-blue">Compte</i>
           </h1>
-          <body class="loggedin">
+ 
             <div class="login">
               <h1>Login</h1>
               <form action="authenticate.php" method="post">
@@ -126,10 +121,15 @@ require_once('header.php');
                 <input type="submit" value="Login">
               </form>
             </div>
+          </div>
        
             </main>
   
-  </div>
+<?php
+
+require_once('footer.php');
+
+?>
          
           <!--<div id="stage" class="fade-in-forward" style="opacity: 1;"><div>
             <div class="card">

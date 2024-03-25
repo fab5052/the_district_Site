@@ -1,7 +1,7 @@
 <?php
 // Change this to your connection info.
 $DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
+$DATABASE_USER = 'admin';
 $DATABASE_PASS = 'Afpa1234';
 $DATABASE_NAME = 'the_district';
 // Try and connect using the info above.
@@ -31,4 +31,3 @@ if (isset($_GET['email'], $_GET['code'])) {
 		}
 	}
 }
-?>

@@ -50,15 +50,13 @@
               <span></span>
     
               </button>
-    
-    
-    
           </div>
-          <div class="navlinks-container col-md-6 d-flex justify-items-center">
-    
-   
 
-        <a class="nav-link " href="index.php" aria-current="page">Accueil</a>
+
+
+<div class="navlinks-container col-md-6 d-flex justify-items-center">
+    
+           <a class="nav-link " href="index.php" aria-current="page">Accueil</a>
         <a class="nav-link" href="categorie.php">Catégories</a>
         <a class="nav-link" href="plat.php">Plats</a>
         <a class="nav-link" href="contact.php">Contact</a>
@@ -66,39 +64,28 @@
       </div>
 
     
-      <div class="nav-authentication col-md-2 my-auto m-0 d-flex align-items-center vertical-align-center">
-    <div class="shopping " >
-          <a href="#"> <i class="fa fa-shopping-cart red "></i> <span class="badge badge-red">0</span></a>
-           
-    </div>
- 
-         <div class="sign-btns d-block">    <a href="login.php"> 
-     <img src="assets/img/user.svg" class="user-toggler" aria-label="Sign in page" alt="user icon">
-           
-          <i class="fa fa-sign-in" aria-hidden="true"></i></a> 
-            </div>
-  
-    
+<div class="nav-authentication col-md-4 my-auto mx-auto m-3 d-flex justify-content-evenly align-items-center vertical-align-center">
 
-    <div class="navtop">
-        <div>
+ 
+
          
             <a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
             <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
-        </div>
-    </div>
+   
+        
 
-            
-
+   
+          <a href="#"> <i class="fa fa-shopping-cart red "></i> <span class="badge badge-red">0</span></a>
+         
+    
+<div id="search">
                 <form action="results.php" method="post"accept-charset="utf-8">
               <input type="text" name="input" class="input" placeholder="Search" />
               <button type="reset" class="search " id="search-button"> 
               </form>
               </button>
-            </div>
-            </div>
-        
     
+              </div>
           </div>
 
  
