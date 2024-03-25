@@ -20,7 +20,7 @@ hr {
   margin-bottom: 20vh;
   /* Marge en bas pour éviter le chevauchement avec le footer */
   height: 100%;
-
+vertical-align: baseline;
   background-color: rgba(43, 51, 15, 0.432);
 
 }

@@ -5,6 +5,25 @@ require_once('header.php');
 
 ?>
 
+<?php
+
+function connect_database () {
+    try {
+        $conn = new PDO("mysql:host=localhost;dbname=the_district", "admin", "Afpa1234");
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        session_start();
+
+        echo "Connecté à la base de données:<br>";
+        return $conn;
+    } catch (Exception $e) {
+        echo "Erreur : " .$e->getMessage() . "<br>";
+        echo "N° :" .$e->getCode();
+        die("Fin du script");
+    }
+}
+
+
+?>
 
 
 
@@ -13,85 +32,7 @@ require_once('header.php');
 
 
 
-
- <!--   <header>
-
-
-
-        <nav>
-    
-          <a href="index.html" class="nav-icon" aria-label="homepage" aria-current="page">
-        <span ><img  class="Logo" src="assets/img/images_the_district/the_district_brand/logo_transparent.png"></img>
-    
-          </a>
-    
-          <div class="main-navlinks">
-            <bouton type="button" class=" toggle " aria-label="Toggle Navigation" aria-expanded="false">
-              <span></span>
-              <span></span>
-              <span></span>
-    
-              </button>
-    
-    
-    
-          </div>
-          <div class="navlinks-container d-flex  ">
-    
-            <h3><a class="nav-link " href="index.html" aria-current="page">Accueil</a></h3>
-            <h3><a class="nav-link" href="categories.html">Catégories</a></h3>
-            <h3><a class="nav-link" href="plat.html">Plats</a></h3>
-            <h3><a class="nav-link" href="contact.html">Contact</a></h3>
-    
-          </div>
-    
-    
-    
-    
-    
-           <!-- <input class="form-control mr-2 width: 65px height: 25px text-left" type="search" placeholder="recherche..."
-              aria-label="Search"
-              style=" opacity: 0.75; box-shadow: 2px 2px 10px 2px rgba(49, 34, 34, 0.9) inset; border: 1px #403737 solid; border-right: 1px #0f0d0d89 solid; text-align: center; font-size: 20px; font-family: Calibri; letter-spacing: 2px">
-    
-            <button class="btn btn-outline-secondary" type="submit"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"
-                style="transform: translateY(-15%) ">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-              </svg>
-            </button>
-          </form>--
-    
-    
-    
-    
-          <div class="nav-authentication col-2 d-flex   ">
-    <div class="shopping mx-0" >
-          <a href="#">  <h3><i class="fa fa-shopping-cart red "></i> <span class="badge badge-red">0</span></h3></a>
-           
-    </div>
-         <div class="sign-btns  ">    <a href="SignIn.html"> 
-     <h3> <img src="assets/img/user.svg" class="user-toggler" aria-label="Sign in page" alt="user icon">
-           
-             <i class="fa fa-sign-in" aria-hidden="true"></i></h3></a> 
-            </div>
-    
-         
-          
-              <form  class="search" id="search" action="results.php" method="GET" accept-charset="utf-8">
-              <input type="text" name="input" class="input" placeholder="Search" />
-              <button type="reset" class="search " id="search-button">
-              </form>
-            </button>
-        
-    
-          </div>
-        
-    
-      
-        
-        </nav>
-      </header>-->
+ 
     
     
     
@@ -125,13 +66,9 @@ require_once('header.php');
        
             </main>
   
-<?php
 
-require_once('footer.php');
-
-?>
          
-          <!--<div id="stage" class="fade-in-forward" style="opacity: 1;"><div>
+          <div id="stage" class="fade-in-forward" style="opacity: 1;"><div>
             <div class="card">
               <header class="mb-8">
                     <h1 id="fxa-enter-email-header" class="card-header">
@@ -217,6 +154,8 @@ require_once('footer.php');
   
     
 
-    <script src="toggle.js"></script>
-    <script src="script.js"></script>-->
+    <?php
 
+    require_once('footer.php');
+    
+    ?>
