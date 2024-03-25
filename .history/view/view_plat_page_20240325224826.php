@@ -15,8 +15,6 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 require_once('DAO.php');
 
 
-$plat_page->execute();
-$plats = $plat_page->fetchAll(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, "Plat");
 
 if (in_array($Currentpage, $array_plat)) {
 echo "<div class='row justify-content-center  col-7 mx-auto'>";
