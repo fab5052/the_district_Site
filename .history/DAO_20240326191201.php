@@ -19,7 +19,7 @@ function connect_database () {
 // Connexion à la base de données
 $conn = connect_database();
 
-
+session_start();
 
 // Récupération des catégories actives
 function get_categories($conn) {

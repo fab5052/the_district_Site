@@ -115,7 +115,7 @@ CREATE TABLE `commande` (
 -- Déchargement des données de la table `commande`
 --
 
-INSERT INTO `commande` (`id`, `id_plat`, `id_accounts`, `quantite`, `total`, `date_commande`, `etat`, `nom_client`, `telephone_client`, `email_client`, `adresse_client`) VALUES
+INSERT INTO `commande` (`id`, `id_plat`, `id_accounts`, `quantite`, `total`, `date_commande`, `etat`, `username`, `telephone_client`, `email_client`, `adresse_client`) VALUES
 (1, 2, 1, 3, '36.00', '2024-03-04 08:30:00', 'En attente de traitement', 'Alice Johnson', '7894561230', 'alice@example.com', '123 Main Street'),
 (2, 4, 2, 2, '26.00', '2024-03-04 09:15:00', 'En cours de livraison', 'Bob Smith', '7418529630', 'bob@example.com', '456 Elm Street'),
 (3, 8, 3, 1, '15.00', '2024-03-04 10:00:00', 'Livrée', 'Emily Brown', '7458963210', 'emily@example.com', '789 Oak Avenue'),

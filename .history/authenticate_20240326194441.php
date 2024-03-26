@@ -40,7 +40,8 @@ if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?
 			$_SESSION['loggedin'] = TRUE;
 			$_SESSION['name'] = $_POST['username'];
 			$_SESSION['id'] = $id;
-		
+			header('Location: home.php');			
+		} else {
 			// Incorrect password
 			header('Location: home.php');
 		} else {

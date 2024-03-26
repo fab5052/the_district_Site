@@ -19,8 +19,6 @@ function connect_database () {
 // Connexion à la base de données
 $conn = connect_database();
 
-
-
 // Récupération des catégories actives
 function get_categories($conn) {
     $cat_index = $conn->prepare("SELECT DISTINCT categorie.* 
