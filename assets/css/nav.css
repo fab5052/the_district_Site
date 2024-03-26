@@ -1,32 +1,111 @@
-
-:root{
-  --background-dark: #2d3548;
-  --text-light: rgba(255,255,255,0.6);
-  --text-lighter: rgba(255,255,255,0.9);
-  --spacing-s: 8px;
-  --spacing-m: 16px;
-  --spacing-l: 24px;
-  --spacing-xl: 32px;
-  --spacing-xxl: 64px;
-  --width-container: 1200px;
-}
-
-*{
-  border: 0;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
-html{
-  height: 100%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px
 }
 
-body{
-  height: 100%;
+
+
+/* CSS pour le contenu principal */
+.main-content {
+  margin-top: 25vh;
+  /* Marge en haut pour éviter le chevauchement avec le header */
+  margin-bottom: 20vh;
+  /* Marge en bas pour éviter le chevauchement avec le footer */
+ 
+vertical-align: auto;
+
+
 }
+
+
+.parallax {
+  background-image: url("https://i.etsystatic.com/21916349/r/il/a756da/3962508333/il_794xN.3962508333_jf2j.jpg");
+  background-attachment: fixed;
+  /* Fixe l'image pendant le scroll */
+  background-size: cover;
+  /* L'image prendra 100% de l'espace, quitte à la crop */
+  background-position: center;
+  /* Centre la position de l'image */
+  background-repeat: no-repeat;
+  /* Empêche l'image de se répéter en fonction de la taille d'écran */
+  z-index: -10;
+  overflow: hidden;
+
+}
+
+header {
+  position: fixed;
+
+  top: 0;
+  width: 100vw;
+
+  z-index: 1000;
+  /
+  /* Autres styles personnalisés selon vos besoins */
+}
+
+
+/* CSS pour le footer */
+footer {
+
+
+  width: 100%;
+  height: 20vh;
+  z-index: 100;
+  /* Assure que le footer reste au-dessus du contenu */
+  background-color: #504a4af6;
+  /* Couleur de fond du header */
+
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  background-color: #6b6666f6;
+  /* Couleur de fond du header */
+  align-items: center;
+  flex-grow: 1;
+	flex-basis: 0;
+
+  justify-content: space-between;
+  z-index: 100;
+
+
+  box-shadow: inset 0px 1px 0px #bfbfc4;
+
+}
+
+a {
+  font-size: 20px;
+  color: #7c95c5;
+  text-shadow: solid 4px #d9d9de;
+}
+
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+
+
+.nav-icon img {
+  width: 120px;
+  height: 125px;
+  position: relative;
+}
+
 
 .hero-section{
   align-items: flex-start;
@@ -81,7 +160,7 @@ body{
   right: 0;
   top: 0;
   transform-origin: center;
-  trsnsform: scale(1) translateZ(0);
+  transform: scale(1) translateZ(0);
   transition: 
     filter 200ms linear,
     transform 200ms linear;
@@ -115,118 +194,6 @@ body{
   text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
   line-height: 1.4;
   word-spacing: 100vw;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-}
-
-hr {
-  height: 0;
-  color: inherit;
-  border-top-width: 1px
-}
-
-body {
-  background-color: rgba(40, 44, 28, 0.432);
-}
-
-/* CSS pour le contenu principal */
-.main-content {
-  margin-top: 25vh;
-  /* Marge en haut pour éviter le chevauchement avec le header */
-  margin-bottom: 20vh;
-  /* Marge en bas pour éviter le chevauchement avec le footer */
-  height: 100%;
-vertical-align: auto;
-
-
-}
-
-
-.parallax {
-  background-image: url("https://i.etsystatic.com/21916349/r/il/a756da/3962508333/il_794xN.3962508333_jf2j.jpg");
-  background-attachment: fixed;
-  /* Fixe l'image pendant le scroll */
-  background-size: cover;
-  /* L'image prendra 100% de l'espace, quitte à la crop */
-  background-position: center;
-  /* Centre la position de l'image */
-  background-repeat: no-repeat;
-  /* Empêche l'image de se répéter en fonction de la taille d'écran */
-  z-index: -10;
-  overflow: hidden;
-
-}
-
-header {
-  position: fixed;
-
-  top: 0;
-  width: 100vw;
-
-  z-index: 1000;
-  /
-  /* Autres styles personnalisés selon vos besoins */
-}
-
-
-/* CSS pour le footer */
-footer {
-position: fixed;
-  top: 100;
-  width: 100%;
-  height: auto;
-  z-index: 100;
-  /* Assure que le footer reste au-dessus du contenu */
-
-
-
-  background-color: #504a4af6;
-  /* Couleur de fond du header */
-
-}
-
-nav {
-  display: flex;
-  position: fixed;
-  width: 100vw;
-  background-color: #6b6666f6;
-  /* Couleur de fond du header */
-  align-items: center;
-  flex-grow: 1;
-	flex-basis: 0;
-
-  justify-content: space-between;
-  z-index: 100;
-
-
-  box-shadow: inset 0px 1px 0px #bfbfc4;
-
-}
-
-a {
-  font-size: 20px;
-  color: #7c95c5;
-  text-shadow: solid 4px #d9d9de;
-}
-
-
-.nav-icon {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  margin-right: 15px;
-}
-
-
-
-.nav-icon img {
-  width: 120px;
-  height: 125px;
-  position: relative;
 }
 
 .content {
@@ -331,7 +298,7 @@ vertical-align: middle;
 	width: 1050px;
 	margin: 0 auto;
 }
-/* header {
+header {
 	border-bottom: 1px solid #EEEEEE;
 }
 header .content-wrapper {
@@ -398,13 +365,14 @@ header .link-icons a span {
 main .featured {
 	display: flex;
 	flex-direction: column;
-	background-image: url(imgs/featured-image.jpg);
+	background-image: url(assets/img/images_the_district/category/burger_cat.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 500px;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+  z-index: auto;
 }
 main .featured h2 {
 	display: inline-block;
@@ -642,7 +610,7 @@ main .placeorder h1 {
 }
 main .placeorder p {
 	text-align: center;
-} */
+}
 
 .toggle {
   display: none;

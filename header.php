@@ -56,7 +56,7 @@
 
 <div class="navlinks-container col-md-6 d-flex justify-items-center">
     
-           <a class="nav-link " href="index.php" aria-current="page">Accueil</a>
+           <a class="nav-link " href="home.php" aria-current="page">Accueil</a>
         <a class="nav-link" href="categorie.php">Catégories</a>
         <a class="nav-link" href="plat.php">Plats</a>
         <a class="nav-link" href="contact.php">Contact</a>
@@ -77,15 +77,18 @@
    
           <a href="#"> <i class="fa fa-shopping-cart red "></i> <span class="badge badge-red">0</span></a>
          
-    
-<div id="search">
-                <form action="results.php" method="post"accept-charset="utf-8">
+         
+          <?php if($_SERVER['PHP_SELF'] == '/home.php'):  ?>
+            <div id="search">
+                <form id="search" action="search" method="post" accept-charset="utf-8">
               <input type="text" name="input" class="input" placeholder="Search" />
               <button type="reset" class="search " id="search-button"> 
               </form>
               </button>
-    
+           
               </div>
+            
+              <?php endif; ?>
           </div>
 
  

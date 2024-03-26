@@ -65,13 +65,20 @@ $stmt->close();
                 <td>Email:</td>
                 <td><?= isset($email) ? htmlspecialchars($email) : '' ?></td>
             </tr>
-        </table>
-    
+        </table>?>
+        
+
+
+
+
+
+  </div>  
     </fieldset>
-</div>
+
 
 </main>
 </div>
+
 
 <?php
 

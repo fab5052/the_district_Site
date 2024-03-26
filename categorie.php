@@ -1,8 +1,20 @@
-<?php
+
+<?php 
 
 require_once('header.php');
 
-?>  
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: login.php');
+	exit;
+}
+
+
+?>
+
+
+
   <div class="parallax ">
 
 
@@ -61,6 +73,14 @@ require_once('header.php');
                     beginneon()
                   </script>
       </h1>
+
+      <div class="featured my-auto">
+    <h2>Menu</h2>
+    <p>Decouvrez toutes nos catégories de plats</p>
+</div> 
+<div class="recentlyadded content-wrapper">
+    <h2>Plats</h2>
+    <div class="products">
       <section class="hero-section">
   <div class="card-grid">
     <a class="card" href="#">

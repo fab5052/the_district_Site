@@ -6,7 +6,7 @@ $Currentpage = basename($_SERVER['PHP_SELF']);
 
 
 require_once('classes/classe_cat.php');
-require_once('classes/classe_plat.php');
+
 
 $conn = new PDO("mysql:host=localhost;dbname=the_district", 'admin', 'Afpa1234');
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
