@@ -274,7 +274,7 @@ require_once('view/view_index_cat.php');
 
 
 
-</main>-->
+</main>
 <?php
 
 require_once('footer.php');

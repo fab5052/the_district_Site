@@ -35,9 +35,9 @@ if ($Currentpage == "index.php") {
  // Récupération et affichage des plats les plus vendus
  $plats_index = get_plat_index($conn) ;
  echo "<h2>Les Plat les plus vendus </h2>";
- echo "<div class='camera_wrap row justify-content-center  col-7 mx-auto'>";
+ echo "<div class='row justify-content-center  col-7 mx-auto'>";
  foreach ($plats_index as $plat) {
-   echo "<div class='camera_caption col-md-4'>";
+   echo "<div class='camera_wrap col-md-4'>";
    $plat->afficher_plat_index();
    echo "<br>"."</div>";
   }
