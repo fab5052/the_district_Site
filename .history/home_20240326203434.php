@@ -1,7 +1,11 @@
+<?php 
 
+
+require_once('header.php');
+
+?>
 
 <?php 
-session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
 	header('Location: login.php');
@@ -12,21 +16,18 @@ if (!isset($_SESSION['loggedin'])) {
   setcookie(session_name(),'',0,'/');
   session_regenerate_id(true);
   exit;
+
+ } else {unset(($_SESSION['loggedin'])) ;
+  
+	header('Location: register.html');
+  exit;
 }
-
-  ?>
-
-<?php 
-
-
-require_once('header.php');
-
-?>
 
 
  
 
 
+?>
 
 
 

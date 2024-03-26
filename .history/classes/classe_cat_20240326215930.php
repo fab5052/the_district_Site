@@ -46,7 +46,7 @@ class Categorie {
         echo "<h3>" . $this->getLibelle() . "</h3>
         <div id='accordion' class='accordion-group mt-3'>
         <a href='plat_cat.php?id=" . $this->getId() . "'>
-        <img class='accordion-overlay mx-auto img-fluid d-block' src='". $this->getImage() . "'></div>
+        <img class='accordion-overlay card-img-top img_cat mx-auto img-fluid d-block' src='". $this->getImage() . "'>
         </a>
         </div>";
       

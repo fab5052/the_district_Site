@@ -77,5 +77,4 @@ if(isset($_GET['id'])) {
 }
 
 require_once('classes/classe_cat.php');
-require_once('classes/classe_plat.php');
 

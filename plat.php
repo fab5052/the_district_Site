@@ -54,31 +54,9 @@ require_once('header.php');
                 beginneon();
             </script>
         </h1>
-
-        <div class="featured my-auto">
-            <h2>Menu</h2>
-            <p>Découvrez toutes nos catégories de plats</p>
-        </div>
-        <div class="recentlyadded content-wrapper">
-            <h2>Plats</h2>
-            <div class="products">
-                <?php foreach ($plats as $plat): ?>
-                    <a href="index.php?page=plat&id=<?= $plat->getId() ?>" class="product">
-                        <img src="assets/img/<?= $plat->getImage() ?>" width="200" height="200" alt="<?= $plat->getLibelle() ?>">
-                        <span class="name"><?= $plat->getLibelle() ?></span>
-                        <span class="price">
-                            &dollar;<?= $plat->getPrix() ?>
-                            <?php if ($plat->getId() > 0): ?>
-                                <span class="price">&dollar;<?= $plat->getPrix() ?></span>
-                            <?php endif; ?>
-                        </span>
-                    </a>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </main>
-</div>
-
+<?php
+require_once('view_pages/view_plat_page.php');
+?>
 <?php
 require_once('footer.php');
 ?>

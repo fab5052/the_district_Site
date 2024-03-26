@@ -56,7 +56,6 @@
 <script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
 <script src="assets/js/carousel.js"></script>
 <script src="assets/js/toggle.js"></script>
-<script src="assets/js/sForm.js"></script>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

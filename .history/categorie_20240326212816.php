@@ -107,7 +107,12 @@ require_once('header.php');
   <div>
 </section>-->
 
->
+<div class="container-fluid ">
+          <!-- ACCORDION ROW -->
+          <div class="row">
+            <ul class="accordion-group" id="accordion">
+            <li>
+                <div class="accordion-overlay"></div>
 
       <?php
 
@@ -115,7 +120,7 @@ require_once('view/view_index_cat.php');
 
 ?>
    
-          <!--     <li>
+              <li>
                 <div class="accordion-overlay"></div>
                 <h3>Rustic</h3>
                 <section class="hidden-xs">
@@ -160,7 +165,7 @@ require_once('view/view_index_cat.php');
     </div>
 
         
-          <label for="categoryFilter" class="mb-4 "></label>
+     <!--      <label for="categoryFilter" class="mb-4 "></label>
 
             <select id="categoryFilter" class="form-control mb-3" style="opacity: 0.75; box-shadow: 2px 2px 10px 2px rgba(49, 34, 34, 0.9) inset; border: 1px #403737 solid; border-right: 1px #0f0d0d89 solid; text-align: center; font-size: 20px; font-family: Calibri; letter-spacing: 2px">
                 <option value="">Sélectionnez une catégorie</option>

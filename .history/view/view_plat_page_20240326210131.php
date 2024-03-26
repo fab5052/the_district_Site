@@ -5,17 +5,15 @@ $array_cat_plat = array("plat_cat.php");
 $Currentpage = basename($_SERVER['PHP_SELF']);
 
 
+require_once('classes/classe_cat.php');
+require_once('classes/classe_plat.php');
+
 $conn = new PDO("mysql:host=localhost;dbname=the_district", 'admin', 'Afpa1234');
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // Inclusion du script DAO pour les requêtes
-
-
 require_once('DAO.php');
 
-require_once('classes/classe_plat.php');
-
-require_once('classes/classe_cat.php');
 
 $plat_page->execute();
 $plats = $plat_page->fetchAll(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, "Plat");
@@ -77,5 +75,4 @@ if(isset($_GET['id'])) {
 }
 
 require_once('classes/classe_cat.php');
-require_once('classes/classe_plat.php');
 

@@ -3,6 +3,13 @@
 
 require_once('header.php');
 
+session_start();
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: login.php');
+	exit;
+}
+
 
 ?>
 
@@ -107,15 +114,19 @@ require_once('header.php');
   <div>
 </section>-->
 
->
-
+<div class="container-fluid ">
+          <!-- ACCORDION ROW -->
+          <div class="row">
+            <ul class="accordion-group" id="accordion">
+              
       <?php
 
 require_once('view/view_index_cat.php');
 
 ?>
    
-          <!--     <li>
+              <li
+                style="background-image: url('https://www.istockphoto.com/fr/photo/assortiment-de-divers-aliments-malsains-malsains-gm1440200404-480246623?phrase=vertical%20image%20of%20junk%20food&searchscope=image%2Cfilm');">
                 <div class="accordion-overlay"></div>
                 <h3>Rustic</h3>
                 <section class="hidden-xs">
@@ -160,7 +171,7 @@ require_once('view/view_index_cat.php');
     </div>
 
         
-          <label for="categoryFilter" class="mb-4 "></label>
+     <!--      <label for="categoryFilter" class="mb-4 "></label>
 
             <select id="categoryFilter" class="form-control mb-3" style="opacity: 0.75; box-shadow: 2px 2px 10px 2px rgba(49, 34, 34, 0.9) inset; border: 1px #403737 solid; border-right: 1px #0f0d0d89 solid; text-align: center; font-size: 20px; font-family: Calibri; letter-spacing: 2px">
                 <option value="">Sélectionnez une catégorie</option>

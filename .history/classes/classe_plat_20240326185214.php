@@ -90,13 +90,13 @@ public function getLibelle() {
 
 
     public function afficher_plat_page()  {
-         $this->afficher_plat_view();
+        echo $this->afficher_plat_view();
     }
 
 
 
     public function afficher_plat_cat() {
-         $this->afficher_plat_view();
+        echo $this->afficher_plat_view();
     }
 
 
