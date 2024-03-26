@@ -1,6 +1,6 @@
 <?php
 // Définition des pages sur lesquelles afficher le contenu
-
+$array_index = array("home.php"); // Pages index
 $array_cat_page = array("categories.php"); // Pages catégorie
 
 // Récupération du nom de la page courante

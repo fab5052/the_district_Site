@@ -49,4 +49,4 @@ if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?
 		// Incorrect username
 		echo 'Incorrect username and/or password!';
 	}
-}
+?>
