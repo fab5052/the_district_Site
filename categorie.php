@@ -107,15 +107,14 @@ require_once('header.php');
   <div>
 </section>-->
 
->
 
-      <?php
+
+<?php
 
 require_once('view/view_index_cat.php');
 
 ?>
-   
-          <!--     <li>
+     <!--     <li>
                 <div class="accordion-overlay"></div>
                 <h3>Rustic</h3>
                 <section class="hidden-xs">

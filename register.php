@@ -1,15 +1,16 @@
 <?php
-// Change this to your connection info.
+session_start();
+
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'admin';
 $DATABASE_PASS = 'Afpa1234';
 $DATABASE_NAME = 'the_district';
-// Try and connect using the info above.
 $conn = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if (mysqli_connect_errno()) {
-	// If there is an error with the connection, stop the script and display the error.
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
+// W
+
 
 // Now we check if the data was submitted, isset() function will check if the data exists.
 if (!isset($_POST['username'], $_POST['password'], $_POST['email'])) {
@@ -66,7 +67,7 @@ mail($_POST['email'], $subject, $message, $headers);
 echo 'Please check your email to activate your account!';*/
 
 	echo 'You have successfully registered! You can now login!';
-	header('Location:login.php');
+	header('Location: ../login.php');
 } else {
 	// Something is wrong with the SQL statement, so you must check to make sure your accounts table exists with all three fields.
 	echo 'Could not prepare statement!';

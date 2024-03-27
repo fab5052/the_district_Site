@@ -65,7 +65,7 @@ $stmt->close();
                 <td>Email:</td>
                 <td><?= isset($email) ? htmlspecialchars($email) : '' ?></td>
             </tr>
-        </table>?>
+        </table>
         
 
 

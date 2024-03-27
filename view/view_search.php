@@ -24,5 +24,3 @@ foreach($plats as $plat) {
     </div>";
 }
 
-?>
-    

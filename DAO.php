@@ -4,7 +4,6 @@
 require_once('classes/classe_cat.php');
 require_once('classes/classe_plat.php');
 
-// Fonction de connexion à la base de données
 function connect_database () {
     try {
         $conn = new PDO("mysql:host=localhost;dbname=the_district", "admin", "Afpa1234");
@@ -18,8 +17,6 @@ function connect_database () {
 
 // Connexion à la base de données
 $conn = connect_database();
-
-
 
 // Récupération des catégories actives
 function get_categories($conn) {

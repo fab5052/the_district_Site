@@ -1,9 +1,5 @@
 <?php
-// Définition des pages sur lesquelles afficher le contenu
 
-$array_cat_page = array("categorie.php"); // Pages catégorie
-
-// Récupération du nom de la page actuelle
 $Currentpage = basename($_SERVER['PHP_SELF']);
 
 // Inclusion du fichier DAO pour accéder à la base de données
@@ -20,10 +16,10 @@ if ($Currentpage == "index.php") {
   
   // Récupération des catégories et affichage
   $cat_index = get_categorie($conn);
-  echo " <h2>NOS Best-SELLERS</h2>
-   <div class='row justify-content-center  col-7 mx-auto'>";
+  echo " <h2>Les Best-Sellers de la semaine</h2>
+  <div class='camera_wrap camera_magenta_skin  row justify-content-center  col-7 mx-auto' id='camera_wrap_1' >";
   foreach ($cat_index as $categorie) {
-    echo "<div class='col-10 col-sm-6 col-lg-4'>";
+    echo "<div class='camera_caption col-10 col-sm-6 col-lg-4'>";
     $categorie->afficher_cat_index();
     echo "<br>"."</div>";
   }
@@ -34,8 +30,8 @@ if ($Currentpage == "index.php") {
 
  // Récupération et affichage des plats les plus vendus
  $plats_index = get_plat_index($conn) ;
- echo "<h2>Les Plat les plus vendus </h2>";
- echo "<div class='camera_wrap row justify-content-center  col-7 mx-auto'>";
+ echo "<h2>Les plats les </h2>";
+ echo "<div class='  row justify-content-center  col-7 mx-auto' id='camera_wrap_1'>";
  foreach ($plats_index as $plat) {
    echo "<div class='camera_caption col-md-4'>";
    $plat->afficher_plat_index();
@@ -47,13 +43,11 @@ if ($Currentpage == "index.php") {
 // Si la page actuelle est la page de catégorie, afficher les catégories disponibles
 if ($Currentpage == "categorie.php")  {
   $categories = get_cat_page($conn);
-  echo "<div class='row justify-content-center  col-7 mx-auto'>";
+  echo "<div class='row justify-content-center  col-7 mx-auto' id='camera_wrap_1' >";
   foreach ($categories as $categorie) {
-    echo "<div class='col-md-4'>";
+    echo "<div class='camera_caption  col-md-4'>";
     $categorie->afficher_cat_page();
     echo "<br>"."</div>";
   }
   echo "</div>";
 }
-
-?>

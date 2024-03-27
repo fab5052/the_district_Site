@@ -1,21 +1,12 @@
-
-
-<?php 
+<?php
+// We need to use sessions, so you should always start sessions using the below code.
 session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
 	header('Location: login.php');
-  session_start();
-  session_unset();
-  session_destroy();
-  session_write_close();
-  setcookie(session_name(),'',0,'/');
-  session_regenerate_id(true);
-  exit;
+	exit;
 }
-
-  ?>
-
+?>
 <?php 
 
 
@@ -25,6 +16,7 @@ require_once('header.php');
 
 
  
+
 
 
 
@@ -41,12 +33,20 @@ require_once('header.php');
         <i class="neon-blue">District</i>
       </h1>
 
+      <div class="container-fluid w-100 d-flex justify-content-center">
 
 
+    
+    
+<?php
 
+require_once('view/view_index_cat.php');
 
-  
-<div class="container-fluid w-100 d-flex justify-content-center">
+?>
+
+</div>
+ 
+<!-- <div class="container-fluid w-100 d-flex justify-content-center">
   
   <div class="camera_wrap camera_magenta_skin pt-45 h-20 w-100"  id="camera_wrap_1">
   <div data-thumb="assets/img/camera/slides/thumbs/bridge.jpg" data-src="assets/img/camera/slides/bridge.jpg">
@@ -239,7 +239,7 @@ require_once('header.php');
 
         </div>
       </div>
-      </div>
+      </div> -->
       <hr class="featurette-divider">
    
 
