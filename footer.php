@@ -52,10 +52,12 @@
 
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script>
-<script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
-<script src="assets/js/carousel.js"></script>
+
+
+
 <script src="assets/js/toggle.js"></script>
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -68,8 +70,33 @@
 <script src='//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 <script src='//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js'></script><script src="assets/js/accordion.js"></script>
 <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.7/vue.js"></script>
+<script src="https://wlada.github.io/vue-carousel-3d/js/carousel-3d.umd.js"></script>
+<script>
+  new Vue({
+  el: '#carousel3d', 
+  data: {
+    slides: 5
+  },
+  components: {
+    'carousel-3d': window['carousel-3d'].Carousel3d,
+    'slide': window['carousel-3d'].Slide
+  }
+})
+  
+new Vue({
+  el: '#carousel3d-plats',
+  data: {
+    slides: 6
+  },
+  components: {
+    'carousel-3d': window['carousel-3d'].Carousel3d,
+    'slide': window['carousel-3d'].Slide
+  }
+})
+</script>
 
-
+<script src="assets/js/slider.js"></script>
 <script src="assets/js/jquery.js"></script>
 
 
@@ -93,6 +120,5 @@
 
 
 </body>
-
 
 </html>

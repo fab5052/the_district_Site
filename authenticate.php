@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'admin';
@@ -10,7 +10,7 @@ if (mysqli_connect_errno()) {
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
 
-
+session_start();
 
 // Now we check if the data from the login form was submitted, isset() will check if the data exists.
 if ( !isset($_POST['username'], $_POST['password']) ) {
@@ -49,4 +49,3 @@ if ($stmt = $conn->prepare('SELECT id, password FROM accounts WHERE username = ?
 
 	$stmt->close();
 }
-

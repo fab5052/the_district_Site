@@ -777,7 +777,7 @@ textarea {
 
 
 .carousel {
-  display: block;
+
   background-color: #6f6d7227;
   justify-items: center;
   transition: background 0.4s ease-in;
@@ -787,7 +787,7 @@ textarea {
 }
 
 .carousel-image {
-  display: flex;
+
   height: auto;
   /* Définissez une hauteur maximale pour les images */
   width: auto;
@@ -802,7 +802,7 @@ input[type=radio] {
 }
 
 .cards {
-  position: absolute;
+
   justify-content: center;
   vertical-align: middle;
   width: 100%;

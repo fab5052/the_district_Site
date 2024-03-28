@@ -109,12 +109,26 @@ require_once('header.php');
 
 
 
+
+
+<div class="container-fluid ">
+          <!-- ACCORDION ROW -->
+      
+          <ul class="accordion-group" id="accordion"> 
+                <li>     
+    
+        
 <?php
+
 
 require_once('view/view_index_cat.php');
 
 ?>
-     <!--     <li>
+
+</li>
+  </ul>
+</div>
+   <!--     <li>
                 <div class="accordion-overlay"></div>
                 <h3>Rustic</h3>
                 <section class="hidden-xs">
@@ -279,7 +293,6 @@ require_once('view/view_index_cat.php');
 require_once('footer.php');
 
 ?>
-
 
 
 

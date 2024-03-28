@@ -1,8 +1,14 @@
 <?php
 
+
 // Inclusion des classes nécessaires
 require_once('classes/classe_cat.php');
 require_once('classes/classe_plat.php');
+
+
+
+
+
 
 function connect_database () {
     try {
@@ -32,12 +38,13 @@ function get_categorie($id) {
    
     $conn = connect_database();
     $requete = $conn->prepare("SELECT * FROM categorie WHERE id = :id");
-    $requete->bindParam(":id", $id);
+    $requete->bindParam(':id', $id);
     $requete->execute();
     $categorie = $requete->fetchAll(PDO::FETCH_CLASS | PDO::FETCH_PROPS_LATE, "Categorie");
-    // var_dump($id, $categorie);
+   
     return $categorie;
 }
+
 
 // Récupération des plats populaires
 function get_plat_index($conn) {
@@ -99,7 +106,7 @@ function get_plat($conn, $id) {
 // Requête pour obtenir les catégories actives à afficher sur la page d'index
 $cat_index = $conn->prepare("SELECT id, libelle , image, active
 FROM categorie
-
+WHERE active = 'Yes'
 LIMIT 6");
 
 
@@ -127,3 +134,4 @@ JOIN categorie ON categorie.id = plat.id_categorie");
 $cat_plat =$conn->prepare("SELECT *
 FROM plat
 WHERE id_categorie = :id_categorie");
+

@@ -1,3 +1,4 @@
+-- Active: 1710857329544@@localhost@3306
 -- phpMyAdmin SQL Dump
 -- version 5.1.1deb5ubuntu1
 -- https://www.phpmyadmin.net/
@@ -195,16 +196,18 @@ ALTER TABLE `categorie`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `plat`
+--
+
+ALTER TABLE `plat`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `commande`
 --
 ALTER TABLE `commande`
   ADD PRIMARY KEY (`id`);
 
---
--- Index pour la table `plat`
---
-ALTER TABLE `plat`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
@@ -223,16 +226,17 @@ ALTER TABLE `categorie`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
+-- AUTO_INCREMENT pour la table `plat`
+--
+ALTER TABLE `plat`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+--
 -- AUTO_INCREMENT pour la table `commande`
 --
 ALTER TABLE `commande`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
---
--- AUTO_INCREMENT pour la table `plat`
---
-ALTER TABLE `plat`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

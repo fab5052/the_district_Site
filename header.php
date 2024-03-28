@@ -38,7 +38,7 @@
 
 <nav >
     
-<a href="home.php" class="nav-icon justify-content-center" aria-label="homepage" aria-current="page">
+<a href="index.php" class="nav-icon justify-content-center" aria-label="homepage" aria-current="page">
         <span ><img  class="Logo justify-content-center position-relative" src="assets/img/images_the_district/the_district_brand/logo_transparent.png"></img>
     
           </a>
@@ -78,7 +78,7 @@
           <a href="#"> <i class="fa fa-shopping-cart red "></i> <span class="badge badge-red">0</span></a>
          
          
-          <?php if($_SERVER['PHP_SELF'] == '/index.php'):  ?>
+          <?php if($_SERVER['PHP_SELF'] == '../index.php'):  ?>
             <div id="search">
                 <form id="search" action="search" method="post" accept-charset="utf-8">
               <input type="text" name="input" class="input" placeholder="Search" />

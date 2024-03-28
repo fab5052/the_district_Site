@@ -3,15 +3,14 @@
 class Categorie {
     public  $libelle;
 
-    public  $image_path_1, $image_path_2;
+    public  $image;
     
     private $id;
-    private $active;
     
-    public function __construct($id= null, $libelle= null, $image_path_1= null, $image_path_2=null,  $active= null) {
+    public function __construct($id= null, $libelle= null, $image= null, $active= null) {
         $this->id = $id;
         $this->libelle = $libelle;
-        $this->image = $image_path_1;  $image_path_2;
+        $this->image = $image;
         $this->active= $active;
     }
 
@@ -19,11 +18,9 @@ class Categorie {
         return $this->id;
     }
 
-
-
-    // Méthodes pour obtenir et définir la propriété active
-    public function getActive() {
-        return $this->active;
+    public function setId($id) {
+        $this->id = $id;
+            return $this;
     }
 
     
@@ -37,7 +34,7 @@ class Categorie {
 
     // Méthodes pour obtenir et définir la propriété image
     public function getImage() {
-        return array($this->image_path_1, $this->image_path_2);
+        return array($this->image);
     }
     
 
@@ -46,7 +43,7 @@ class Categorie {
     public function afficher_cat_view() {
         
         echo "<h3>" . $this->getLibelle() . "</h3>
-        <div id='camera_wrap_1' class='camera_wrap camera_magenta_skin row justify-content-center  col-7 mx-auto  mt-3' >
+        <div class='carousel3d mx-auto mt-3'>
         <a href='plat_cat.php?id=" . $this->getId() . "'>
         <img class='mx-auto img-fluid d-block' src='". $this->getImage() . "'></div>
         </a>
@@ -70,4 +67,3 @@ class Categorie {
 
   
 }
-
