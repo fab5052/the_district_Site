@@ -21,10 +21,10 @@ if ($Currentpage == "index.php") {
   
     // Récupération et affichage des catégories
     $cat_index = get_categories($conn);
-    echo "<h2>NOS Best-SELLERS</h2>
-        <div id='carousel3d'>";
+    echo "<h2>LES BEST-SELLERS DE LA SEMAINE</h2>
+        <div>";
     foreach ($cat_index as $categorie) {
-        echo "<div class='col-2 mx-auto'>";
+        echo "<div >";
         $categorie->afficher_cat_index();
         echo "<br></div>";
     }
@@ -33,9 +33,9 @@ if ($Currentpage == "index.php") {
     // Récupération et affichage des plats les plus vendus
     $plats_index = get_plat_index($conn);
     echo "<h2>Les Plat les plus vendus</h2>
-        <div id='carousel3d-plats' >";
+        <div  >";
     foreach ($plats_index as $plat) {
-        echo "<div class='col-2 mx-auto'>";
+        echo "<div>";
         $plat->afficher_plat_index();
         echo "<br></div>";
     }
@@ -46,9 +46,9 @@ if ($Currentpage == "index.php") {
 // Si la page actuelle est la page de catégorie, afficher les catégories disponibles
 if ($Currentpage == "categorie.php")  {
   $categories = get_cat_page($conn);
-  echo "<div class='accordion-group col-md-2' id='accordion'>";
+  echo "<div class='container-fluid '>";
   foreach ($categories as $categorie) {
-  echo "<div class='col-md-2 justify-content-center mx-auto' >";
+  echo "<div  >";
   $categorie->afficher_cat_page();
   echo "</div>";
   }

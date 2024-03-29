@@ -82,14 +82,14 @@ CREATE TABLE `categorie` (
 --
 
 INSERT INTO `categorie` (`id`, `libelle`, `image`, `active`) VALUES
-(4, 'Pizza', 'assets/images_the_district/category/cat_pizza.jpg', 'Yes'),
-(5, 'Burger', 'assets/images_the_district/category/cat_burger.jpg', 'Yes'),
-(9, 'Carnivore', 'assets/images_the_district/category/cat_carnivore.jpg', 'Yes'),
-(10, 'Pasta', 'assets/images_the_district/category/cat_pasta.jpg', 'Yes'),
-(11, 'Salade', 'assets/images_the_district/category/cat_salade.jpg', 'Yes'),
-(12, 'Asian Food', 'assets/images_the_district/category/cat_sushi.jpg', 'No'),
-(13, 'Sandwich', 'assets/images_the_district/category/cat_sandwich.jpg', 'Yes'),
-(14, 'Poisson', 'assets/images_the_district/category/cat_poisson.jpg', 'Yes'),
+(4, 'Pizza', 'assets/img/images_the_district/category/pizza_cat.png', 'Yes'),
+(5, 'Burger', 'assets/img/images_the_district/category/burger_cat.png', 'Yes'),
+(9, 'Wrap', 'assets/img/images_the_district/category/wrap_cat.png', 'Yes'),
+(10, 'Pasta', 'assets/img/images_the_district/category/pasta_cat.jpg', 'Yes'),
+(11, 'Salade', 'assets/img/images_the_district/category/salade_cat.jpg', 'Yes'),
+(12, 'Asian Food', 'assets/img/images_the_district/category/asian_food_cat.jpg', 'No'),
+(13, 'Sandwich', 'assets/img/images_the_district/category/sandwich_cat.jpg', 'Yes'),
+(14, 'Veggie', 'assets/images_the_district/category/veggie_cat.jpg', 'Yes'),
 (16, 'Partage', 'assets/images_the_district/category/cat_partage.jpg', 'No');
 
 -- --------------------------------------------------------

@@ -611,7 +611,7 @@ main .placeorder h1 {
 main .placeorder p {
 	text-align: center;
 } */
-
+/* 
 .card {
   background-color: #191916;
 
@@ -632,7 +632,7 @@ main .placeorder p {
   width: 100%;
   height: 100%;
 }
-
+ */
 
 .toggle {
   display: none;
@@ -778,7 +778,7 @@ textarea {
 
 .carousel {
 
-  background-color: #6f6d7227;
+
   justify-items: center;
   transition: background 0.4s ease-in;
   margin: 3rem;
@@ -792,7 +792,7 @@ textarea {
   /* Définissez une hauteur maximale pour les images */
   width: auto;
   /* Ajustez automatiquement la largeur en fonction de la hauteur maximale */
-
+  z-index: 10;
 
 }
 
@@ -805,28 +805,18 @@ input[type=radio] {
 
   justify-content: center;
   vertical-align: middle;
-  width: 100%;
+  width: auto;
 
-  height: auto;
+  height: 100%;
   border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
   margin: auto;
   transition: transform 0.5s ease;
   cursor: pointer;
   background-color: transparent;
 
+
 }
 
-
-span.title {
-  display: flex;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 25px;
-  font-weight: 800;
-  color: #1b5970;
-
-  justify-content: center;
-  background-color: #ca99648e;
-}
 
 
 

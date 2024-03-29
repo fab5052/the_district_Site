@@ -81,33 +81,80 @@ if (!isset($_SESSION['loggedin'])) {
 
 
 
-        <div id="app" class="container-fluid col-sm-12">
+        <div class="container-fluid col-sm-12">
     <div id="carousel3d" class="carousel">
-        <carousel-3d :perspective="30" :space="250" :display="7" :height="360" :width="400" :border="1"
+    <carousel-3d :perspective="30" :space="250" :display="7" :height="360" :width="400" :border="1"
             :color="'#00b000'" :controls-visible="true" :controls-prev-html="'&#10092;'"
             :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true"
             :autoplay="true" :autoplay-timeout="5000">
-            <?php foreach ($cat_index as $categorie): ?>
-                <slide>
-                    <div class="carousel-3d">
-                        <?php $categorie->afficher_cat_index(); ?>
-                    </div>
-                </slide>
-            <?php endforeach; ?>
-        </carousel-3d>
-  
+
+
+            <slide :index="0">
+                        <label class="cards d-flex" for="item-1" id="song-1">
+                            <span > </span> </label> <img class="carousel-image   " >
+                    </slide>    
+            <slide :index="1">
+                        <label class="cards d-flex" for="item-2" id="song-2">
+                            <span > </span> </label> <img class="  carousel-image" >
+                    </slide>
+                
+                    <slide :index="2">
+                        <label class="cards d-flex" for="item-3" id="song-3">
+                            <span > </span> </label> <img class="carousel-image " >
+                    </slide>
+
+
+                    <slide :index="3">
+                        <label class="cards d-flex" for="item-4" id="song-4">
+                            <span > </span> </label> <img class="img-fluid carousel-image " >
+                    </slide>
+
+                       
+                    <slide :index="4">
+                        <label class="cards d-flex" for="item-5" id="song-5">
+                            <span > </span> </label> <img class="img-fluid carousel-image " >
+                    </slide> 
+
+
+                    <slide :index="5">
+                        <label class="cards d-flex" for="item-6" id="song-6">
+                            <span > </span> </label> <img class="img-fluid carousel-image " >
+                    </slide>
+
+
+                    <slide :index="6">
+                        <label class="cards d-flex" for="item-7" id="song-7">
+                            <span > </span> </label> <img class="img-fluid carousel-image " >
+                    </slide>
 
 
 
 
-
-<?php
+                    <?php
 
 require_once ('view/view_index_cat.php')
 
 ?>
 
-                <!-- <carousel-3d :perspective="30" :space="250" :display="7" :height="360" :widht="400" :border="1"
+
+                    </carousel-3d>
+                    </div>
+                    </div>
+     
+     
+
+
+
+
+
+
+
+  
+
+
+
+
+<!-- <carousel-3d :perspective="30" :space="250" :display="7" :height="360" :widht="400" :border="1"
                     :color="'&00b000'" :controls-visible="true" :controls-prev-html="'&#10092;'"
                     :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="true"
                     :autoplay="true" :autoplay-timeout="5000">

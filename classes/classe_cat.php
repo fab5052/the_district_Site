@@ -34,21 +34,20 @@ class Categorie {
 
     // Méthodes pour obtenir et définir la propriété image
     public function getImage() {
-        return array($this->image);
+        return $this->image;
     }
     
 
 
 
     public function afficher_cat_view() {
-        
         echo "<h3>" . $this->getLibelle() . "</h3>
-        <div class='carousel3d mx-auto mt-3'>
-        <a href='plat_cat.php?id=" . $this->getId() . "'>
-        <img class='mx-auto img-fluid d-block' src='". $this->getImage() . "'></div>
-        </a>
-        </div>";
-      
+     <div>   <slide>   <label class='cards d-flex'>
+       <span> <a href='plat_cat.php?id=" . $this->getId() . "'></span></label>
+        <img class='carousel img-fluid' src='". $this->getImage() . "'>
+        </slide></div>";
+     
+        
         
 
     }   
